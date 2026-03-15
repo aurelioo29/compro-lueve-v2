@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import Providers from "@/components/providers";
 
 const LOCALES = ["en", "id"];
 
@@ -104,7 +105,7 @@ export default async function RootLayout({ children, params }) {
         className={`${quattro.variable} ${minionPro.variable} ${poppins.variable} ${futuraDee.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>
     </html>
