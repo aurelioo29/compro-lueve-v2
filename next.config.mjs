@@ -10,7 +10,7 @@ const nextConfig = {
     "http://192.168.68.59:3000",
   ],
   images: { unoptimized: true },
-  output: "export",
+  // output: "export",
 };
 
 export default withNextIntl(nextConfig);

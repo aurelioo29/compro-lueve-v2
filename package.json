@@ -10,8 +10,11 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "@splidejs/react-splide": "^0.7.12",
+    "@tanstack/react-query": "^5.90.21",
     "aos": "^2.3.4",
+    "axios": "^1.13.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
@@ -21,8 +24,12 @@
     "next-intl": "^4.8.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.2",
+    "sonner": "^2.0.7",
     "swiper": "^12.0.3",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
