@@ -1,0 +1,1382 @@
+{
+  "home": {
+    "title": "Selamat datang",
+    "tagline": "Desain yang beneran bikin laku."
+  },
+  "navbar": {
+    "about": "Tentang",
+    "collection": "Koleksi",
+    "services": "Layanan",
+    "lang": {
+      "en": "EN",
+      "id": "ID"
+    }
+  },
+  "hero": {
+    "headlineLine1": "Tepati Janjimu",
+    "headlineLine2": "Melalui Cincin",
+    "desc": "Setiap kisah cinta yang indah berawal dari sebuah janji. <strong>Lueve</strong> lahir untuk menghormati janji itu melalui cincin yang menangkap esensi keabadian. Dengan penuh hasrat, seni, dan kepercayaan di dalamnya, Lueve mengubah momen istimewamu menjadi kenangan abadi."
+  },
+  "about": {
+    "heading": "Tentang kami",
+    "imageAlt": "Dua cincin pernikahan di atas batu",
+    "cta": "Lihat Selengkapnya",
+    "topRightAlt": "Rings on cushion",
+    "bottomLeftAlt": "Diamond ring close-up",
+    "bottomRightAlt": "Ring set in a box",
+    "body": "Di <brand>Lueve</brand>, kami menyediakan lebih dari sekadar perhiasan. Kami adalah mitra perhiasan pribadi Anda. Spesialisasi dalam <wedding>cincin pernikahan</wedding> dan <engagement>cincin pertunangan</engagement> yang dirancang khusus, kami selalu siap membantu Anda menciptakan karya yang seunik dan sebermakna kisah cinta Anda. Setiap percikan, lekuk, dan tatahan merupakan cerminan selera Anda, perjalanan Anda, dan masa depan Anda."
+  },
+  "discover": {
+    "title": "KARYA YANG DIPESAN KHUSUS",
+    "discover": "Lihat sekarang",
+    "wedding": {
+      "title": "Cincin Pernikahan",
+      "caption": "Setiap karya dalam koleksi kami",
+      "alt": "Tangan mengenakan cincin pernikahan"
+    },
+    "engagement": {
+      "title": "Cincin Tunangan",
+      "caption": "Saat kamu mencari yang paling pas",
+      "alt": "Tangan mengenakan cincin tunangan"
+    }
+  },
+  "faq": {
+    "heading": {
+      "top": "ADA PERTANYAAN?",
+      "bottom": " TENANG, KAMI JAWAB."
+    },
+    "imageAlt": "Kotak cincin dengan cincin",
+    "items": [
+      {
+        "q": "Berapa lama pembuatan cincin kustom?",
+        "a": "Pembuatan cincin kustom biasanya memakan waktu 4–6 minggu, tergantung tingkat kerumitan desain dan material yang dipilih. Kami sarankan memulai proses lebih awal agar ada cukup waktu untuk menyempurnakan setiap detail."
+      },
+      {
+        "q": "Material dan batu apa yang kalian gunakan?",
+        "a": "Kami menggunakan logam mulia berkualitas seperti emas 18K (kuning, putih, dan rose). Namun, Anda bisa meminta kadar emas yang lebih tinggi/rendah; pilihan minimal 12K hingga maksimal 20K. Untuk batu mulia, kami menyediakan berlian dan batu berharga lainnya yang autentik, seluruhnya bersertifikat dari lembaga tepercaya seperti Gemological Institute of America (GIA) untuk menjamin keaslian dan kilaunya."
+      },
+      {
+        "q": "Apakah kalian menyediakan layanan purna jual?",
+        "a": "Ya. Kami menyediakan pengukuran ukuran cincin gratis selama proses desain. Jika setelah selesai Anda butuh penyesuaian, kami juga melayani resize agar pas di jari. Termasuk pembersihan perhiasan gratis dan pelapisan ulang (re-plating) emas tanpa biaya."
+      },
+      {
+        "q": "Saya belum tahu maunya apa. Bisa dibantu desain?",
+        "a": "Tentu. Tim kami akan membimbing Anda di setiap langkah—mulai dari eksplorasi preferensi, sketsa ide, hingga finalisasi desain. Baik Anda sudah punya gambaran atau butuh inspirasi, kami siap membantu mewujudkan cincin yang benar-benar mencerminkan kisah cinta Anda."
+      },
+      {
+        "q": "Apakah kalian kirim ke luar negeri?",
+        "a": "Saat ini cincin kustom tersedia untuk pengiriman domestik dalam Indonesia. Untuk permintaan internasional, silakan hubungi tim kami secara langsung dan kami akan bantu dengan pengaturan terbaik."
+      },
+      {
+        "q": "Bagaimana jika saya butuh cincin dalam waktu cepat?",
+        "a": "Jika Anda memiliki tenggat waktu, beri tahu kami saat konsultasi. Meskipun waktu standar kami 4–6 minggu, kami mungkin dapat mengakomodasi pesanan mendesak bergantung pada desain dan jadwal produksi."
+      }
+    ]
+  },
+  "experience": {
+    "heading": { "top": "Pengalaman", "bottom": " Pelanggan" },
+    "tagline": "Masukan para pelanggan membantu kami menjadi lebih baik—komentar yang jujur dan saran yang berguna.",
+    "ariaLabel": "Slide pengalaman pelanggan",
+    "slides": [
+      {
+        "title": "Kevin & Tiara",
+        "desc": "Dari awal udah kerasa kalau Lueve beda. karena aku pernah pergi ke beberapa brand untuk cari wedding ring. Timnya sabar banget bantu aku pilih model yang cocok. Waktu cincinnya datang, aku langsung amazed karena detailnya halus, bagian dalam cincinnya comfort fit banget, diamondnya shining as well. Rasanya the real definision of my wedding ring. Thankyou Lueve.",
+        "imageSrc": "/images/experience/kevin-tiara.jpeg",
+        "imageAlt": "Kevin & Tiara"
+      },
+      {
+        "title": "Peter",
+        "desc": "Pelayanannya fast respon, bikin tenang dari awal sampai akhir. Aku pesen cincin lamaran dan sempat takut soal waktu, tapi semua dikerjakan tepat waktu dan hasilnya di luar ekspektasi. kemarin pas momen lamaran, kalimat pertama yg dia bilang itu ‘wow.. Cincinnya cantik banget.’ jadi agak bangga hehe. Terima kasih, Lueve.",
+        "imageSrc": "/images/experience/peter.jpg",
+        "imageAlt": "Peter"
+      },
+      {
+        "title": "Rico & Monica",
+        "desc": "Aku nggak nyangka sih ci, cincin custom ini hasilnya bisa diluar ekspetasi aku. Desainnya elegan, dan nyaman di jari, rasanya ga ada yang ganjal sama sekali pas dipake. Thank you ciii.",
+        "imageSrc": "/images/experience/rico-monica.jpg",
+        "imageAlt": "Rico & Monica"
+      },
+      {
+        "title": "William & Clarisa",
+        "desc": "Dari konsultasi pertama, adminnya selalu cepat respon dan detail banget jelasin pilihan materialnya. Pas cincinnya selesai, aku langsung jatuh cinta dan excited for the day. Hasilnya bahkan lebih bagus dari ekspektasi di awal.",
+        "imageSrc": "/images/experience/william-carissa.jpg",
+        "imageAlt": "William & Clarisa"
+      },
+      {
+        "title": "Edward",
+        "desc": "Akhirnya, bertunangan. sungguh tidak terduga cincin ini bisa begitu berarti baginya. terima kasih Lueve.",
+        "imageSrc": "/images/experience/edward.jpg",
+        "imageAlt": "Edward"
+      }
+    ]
+  },
+  "collectionShowcase": {
+    "vertical": "Koleksi Kami",
+    "desc": "Jelajahi koleksi perhiasan buatan tangan kami—setiap karya dirancang untuk menangkap emosi, merayakan koneksi, dan bertahan dalam ujian waktu.",
+    "slides": [
+      {
+        "imageSrc": "/images/showcase/center.jpg",
+        "imageAlt": "Wedding rings on white plate"
+      },
+      {
+        "imageSrc": "/images/showcase/right.jpg",
+        "imageAlt": "Engagement ring closeup"
+      },
+      {
+        "imageSrc": "/images/showcase/left.jpg",
+        "imageAlt": "Diamond earrings"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-4.jpg",
+        "imageAlt": "pic-4"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-5.jpg",
+        "imageAlt": "pic-5"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-6.jpg",
+        "imageAlt": "pic-6"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-7.jpg",
+        "imageAlt": "pic-7"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-8.jpg",
+        "imageAlt": "pic-8"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-9.jpg",
+        "imageAlt": "pic-9"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-10.jpg",
+        "imageAlt": "pic-10"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-11.jpg",
+        "imageAlt": "pic-11"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-12.jpg",
+        "imageAlt": "pic-12"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-13.jpg",
+        "imageAlt": "pic-13"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-14.jpg",
+        "imageAlt": "pic-14"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-15.jpg",
+        "imageAlt": "pic-15"
+      }
+    ]
+  },
+  "aboutBrand": {
+    "title": "Tentang LUEVE",
+    "left": {
+      "heading": "Logo Merek",
+      "subheading": "Sertifikat pendaftaran merek dagang"
+    },
+    "logos": {
+      "wordmarkAlt": "Logotipe LUEVE di atas grid",
+      "markAlt": "Emblem LUEVE di atas grid"
+    },
+    "reg": {
+      "label": "Nomor Registrasi",
+      "value": "IDM000749086"
+    },
+    "quote": "“Ingat momen saat Anda berkata ‘I do’”",
+    "body": "Kami memilih slogan ini agar setiap pasangan selalu mengenang hari ketika mereka saling berkomitmen dalam ikatan suci pernikahan. Lebih dari sekadar cincin, ini adalah pengingat abadi atas janji paling bermakna."
+  },
+  "whyShop": {
+    "title": "Mengapa Belanja di LUEVE?",
+    "bgAlt": "Latar belakang cincin (close-up)",
+    "items": [
+      {
+        "title": "Hasil Istimewa, Dibuat Khusus untuk Anda",
+        "desc": "Sejak 2018, LUEVE mengkhususkan diri membuat cincin tunangan dan pernikahan yang melampaui sekadar perhiasan—kami merangkai warisan yang abadi. Setiap cincin adalah perpaduan seni, teknik tingkat lanjut, dan niat yang bermakna.",
+        "imageSrc": "/icons/why-shop/logo.svg",
+        "imageAlt": "Logo LUEVE"
+      },
+      {
+        "title": "Kemewahan Bermakna dengan Manfaat yang Tahan Lama",
+        "desc": "Cincin LUEVE dirancang bukan hanya untuk berkilau di hari Anda mengucap 'I do', tetapi juga untuk menemani Anda seumur hidup. Dari kenyamanan istimewa hingga penceritaan desain yang simbolis, setiap detail menyeimbangkan bentuk dan emosi.",
+        "imageSrc": "/icons/why-shop/ring.svg",
+        "imageAlt": "Desain cincin"
+      },
+      {
+        "title": "Layanan Purna Jual Premium",
+        "desc": "Nikmati layanan seumur hidup termasuk pembersihan cincin gratis, pemolesan, dan bantuan ubah ukuran. Layanan kami tidak berhenti saat penyerahan—ia terus berlanjut, seperti halnya cinta Anda.",
+        "imageSrc": "/icons/why-shop/handshake.svg",
+        "imageAlt": "Jabat tangan melambangkan kemitraan"
+      },
+      {
+        "title": "Eksklusivitas yang Berakar pada Kisah Anda",
+        "desc": "Tak ada dua cincin yang sama. Setiap desain dibuat khusus untuk Anda, terinspirasi perjalanan Anda dan dikerjakan dengan ketelitian yang langka. Bersama LUEVE, kisah cinta Anda menjadi warisan yang unik.",
+        "imageSrc": "/icons/why-shop/heart.svg",
+        "imageAlt": "Hati melambangkan cinta"
+      },
+      {
+        "title": "Permata Terbaik — Berlian Bersertifikat GIA",
+        "desc": "Berlian dan batu permata kami dipilih melalui pemeriksaan kaca pembesar. Bersertifikat GIA mulai 0,20 karat, warna D–E–F dan kejernihan VVS—kemewahan sejati berawal dari kepercayaan pada setiap batu.",
+        "imageSrc": "/icons/why-shop/gia.svg",
+        "imageAlt": "Logo GIA"
+      }
+    ]
+  },
+  "ourStory": {
+    "title": "Bagaimana Kisah Kami Bermula",
+    "items": [
+      {
+        "title": "Berdiri pada 2018",
+        "step": "01",
+        "desc": "LUEVE berawal sebagai konsultasi perhiasan kustom yang didedikasikan untuk menciptakan cincin tunangan dan pernikahan yang benar-benar unik. Dimulai tanpa toko ritel, berbekal hasrat pada seni dan ketelitian terhadap detail, kami mulai merancang karya-karya intim untuk para klien.",
+        "imageSrc": "/images/story/founded-01.svg",
+        "imageAlt": "Tangan mengenakan cincin (2018)",
+        "overlay": "right"
+      },
+      {
+        "title": "Cincin Pribadi Eksklusif",
+        "step": "02",
+        "desc": "Seiring kabar menyebar, LUEVE mulai melayani lebih banyak pasangan yang mencari cincin yang sangat personal—sesuatu yang tidak mereka temukan di toko perhiasan konvensional. Setiap karya dibuat dengan penuh ketelatenan, untuk klien yang mengutamakan makna di atas segalanya.",
+        "imageSrc": "/images/story/exclusive-02.svg",
+        "imageAlt": "Detail cincin personal eksklusif",
+        "overlay": "left"
+      },
+      {
+        "title": "Nama yang Dipercaya",
+        "step": "03",
+        "desc": "Seiring waktu, semakin banyak pasangan datang bukan karena tren, melainkan karena keaslian. Dengan setiap kisah yang dibagikan dan setiap cincin yang diserahkan, LUEVE berkembang dari permata tersembunyi menjadi nama tepercaya bagi mereka yang mengapresiasi kemewahan yang subtil dan kedalaman emosi dalam perhiasan mewah.",
+        "imageSrc": "/images/story/trusted-03.svg",
+        "imageAlt": "Tangan pasangan mengenakan cincin",
+        "overlay": "right"
+      },
+      {
+        "title": "LUEVE",
+        "step": "04",
+        "desc": "Baik untuk pernikahan megah maupun lamaran yang intim, LUEVE menjadi bagian dari tonggak perjalanan Anda.",
+        "imageSrc": "/images/story/lueve-04.svg",
+        "imageAlt": "Cincin di atas kain",
+        "overlay": "left"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "KEBIJAKAN PRIVASI",
+    "sections": [
+      {
+        "num": "01",
+        "title": "INFORMASI YANG KAMI KUMPULKAN",
+        "intro": "Kami dapat mengumpulkan informasi berikut:",
+        "list": [
+          "Nama, alamat email, nomor telepon, alamat pengiriman",
+          "Detail pesanan dan preferensi kustom",
+          "Riwayat komunikasi (termasuk via WhatsApp atau email)"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "HOW WE USE YOUR INFORMATION",
+        "paragraphs": [
+          "Lueve began as a jewelry custom consultation dedicated to creating one of a kind engagement and wedding rings. Begin with unreleased store, just a passion for artistry and devotion to detail, we started by crafting intimate pieces for clients."
+        ],
+        "sub": "Your data is used to:",
+        "list2": [
+          "Process and fulfill orders.",
+          "Provide customer service and updates.",
+          "Offer service supports.",
+          "Improve our service and product offerings.",
+          "We do not sell, rent, or share your personal data to third parties for marketing purposes."
+        ]
+      },
+      {
+        "num": "03",
+        "title": "KOMUNIKASI & PERSETUJUAN",
+        "paragraphs": [
+          "Dengan mengirimkan informasi kontak atau memulai percakapan melalui WhatsApp, Anda menyetujui untuk menerima komunikasi dari LUEVE terkait pesanan, promosi, atau pembaruan. Anda dapat berhenti berlangganan kapan saja."
+        ]
+      },
+      {
+        "num": "04",
+        "title": "KEAMANAN DATA",
+        "paragraphs": [
+          "Kami mengambil langkah yang wajar untuk melindungi informasi pribadi Anda. Namun, tidak ada metode transmisi melalui internet yang 100% aman."
+        ]
+      },
+      {
+        "num": "05",
+        "title": "LAYANAN PIHAK KETIGA",
+        "paragraphs": [
+          "Jika Anda berinteraksi dengan layanan tertanam seperti gerbang pembayaran atau WhatsApp, kebijakan privasi masing-masing layanan tersebut akan berlaku."
+        ]
+      },
+      {
+        "num": "06",
+        "title": "PEMBARUAN KEBIJAKAN",
+        "paragraphs": [
+          "Kebijakan ini dapat diperbarui secara berkala. Penggunaan layanan kami secara berkelanjutan berarti Anda menyetujui versi terbaru."
+        ]
+      }
+    ]
+  },
+  "customRingSpotlight": {
+    "body": "Mulai perjalanan kustom Anda bersama <brand>LUEVE</brand>, di mana setiap detail menceritakan kisah cinta Anda.",
+    "cta": { "label": "Mulai Sekarang" },
+    "image": {
+      "src": "/images/custom/hero-custom-ring.svg",
+      "alt": "Cincin kustom di tangan"
+    }
+  },
+  "terms": {
+    "title": "TERMS & CONDITIONS",
+    "bgAlt": "Background of jewelry box",
+    "sections": [
+      {
+        "title": "INTRODUCTION",
+        "intro": "Welcome to LUEVE. By accessing our website, using our services, or purchasing our products, you agree to be bound by the following Terms & Conditions. Please read them carefully before proceeding."
+      },
+      {
+        "title": "CUSTOM ORDERS",
+        "list": [
+          "All LUEVE jewelry is made to order and personalized based on the client’s preferences",
+          "Due to the bespoke nature of our work, orders are non-refundable once production begins.",
+          "We provide 3D digital previews and consultation before production. Once approved, the production can began."
+        ]
+      },
+      {
+        "title": "PAYMENT",
+        "list": [
+          "Full payment or deposit is required before production starts.",
+          "We accept payment through bank transfer or other methods as informed during consultation.",
+          "Payment confirmations must be sent within 24 hours to secure your order slot."
+        ]
+      },
+      {
+        "title": "TIMELINE & DELIVERY",
+        "list": [
+          "Production time typically ranges from 3 to 4 weeks, depending on design complexity and availability of gemstones.",
+          "We will provide estimated delivery dates, but delays due to unforeseen circumstances (e.g., shipping issues, sourcing delays) may occur.",
+          "All products are shipped with tracking. LUEVE is not liable for courier delays or mishandling."
+        ]
+      },
+      {
+        "title": "PRODUCT WARRANTY & AFTERCARE",
+        "list": [
+          "We provide lifetime complimentary services including cleaning, polishing, and resizing (two times, terms apply).",
+          "Warranty excludes damage due to misuse, accidents, or unauthorized repairs.",
+          "GIA certificates are only provided for diamonds up to 0.20ct."
+        ]
+      },
+      {
+        "title": "INTELLECTUAL PROPERTY",
+        "intro": "All ring designs, brand materials, and content on this site are the property of LUEVE. Reproduction, copying, or redistribution is strictly prohibited without written permission."
+      },
+      {
+        "title": "RIGHT TO REFUSE",
+        "intro": "We reserve the right to decline any custom project that conflicts with our brand values or production capabilities."
+      }
+    ]
+  },
+  "engagement": {
+    "details": {
+      "astrae": {
+        "description": "Cincin spiral rose gold dengan deretan berlian yang mengitari batu utama—melambangkan janji abadi yang selalu kembali, seperti orbit bulan yang tak pernah lelah. Perpaduan sempurna bagi pasangan yang percaya pada ritme cinta yang harmonis dan konsisten.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.30 ct",
+            "Shape": "Emerald",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne,",
+            "Approx Metal Weight": "8–10 g",
+            "Metal Finishing": "Satin"
+          }
+        }
+      },
+      "aurellia": {
+        "description": "Cahaya murni tanpa ornamen berlebih. Aurellia mempersonifikasikan elegansi percaya diri. Setiap faset potongannya dioptimalkan untuk menari bersama cahaya—berputar, mengisyaratkan keabadian dan loyalitas.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.05 ct/pcs",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–4 g",
+            "Metal Finishing": "Satin"
+          }
+        }
+      },
+      "beatrix": {
+        "description": "Seperti Beatrix yang mewah dan elegan, cincin ini menghadirkan pesona klasik dengan sentuhan modern. Berlian utama membentuk siluet sempurna. Desainnya yang timeless merefleksikan kebahagiaan abadi.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "blossom": {
+        "description": "Blossom menangkap keindahan bunga yang mekar penuh—membawa sukacita. Ia merepresentasikan hubungan yang bertumbuh setahap demi setahap, dengan cinta yang kian menguat setiap hari.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.75–1 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "5–7 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "celestia": {
+        "description": "Bentuk bintang yang mekar dikelilingi berlian, seolah melahirkan bintang-bintang baru. Laksana mahkota emas—bersama berlian—melambangkan cinta yang terus berevolusi dan menjadi pusat harapan.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.36 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "4–5 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "chrysalis": {
+        "description": "Paduan champagne bak cinta yang kuat namun lembut. Band bertekstur butiran mengingatkan bahwa keindahan sering lahir dari perjuangan.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.30 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Satin dan Beaded Setengah Bulat"
+          }
+        }
+      },
+      "elara": {
+        "description": "Esensi ketenangan dan pengabdian abadi. Desain terbuka melambangkan dua jiwa yang berpadu harmonis; ukiran samping yang detail memberi kesan klasik. Satu berlian brilliant di pusatnya memantulkan kekuatan cinta yang tenang, disempurnakan finishing mengilap yang mewah namun bersahaja.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "4 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "freesia": {
+        "description": "Freesia melambangkan ketulusan dan cinta abadi. Desain bunga yang ‘mekar’ di jari menunjukkan hubungan yang terus tumbuh namun berakar kuat—menegaskan komitmen dan keanggunan.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.50 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "3–5 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "luminare": {
+        "description": "Terinspirasi dari pancaran tenang cahaya abadi, Luminare menangkap esensi cinta yang tak pernah meredup. <space>Setiap lengkung dan detail butiran dirancang untuk memantulkan harmoni dan keanggunan tanpa waktu. Luminare adalah simbol cinta yang bersinar lembut, namun selamanya.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Emerald",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "4–5 g",
+            "Metal Finishing": "Satin dan Beaded Setengah Bulat"
+          }
+        }
+      },
+      "lxia": {
+        "description": "Cincin berlian yang merepresentasikan cinta sebagai awal dari segala keindahan. Cocok bagi pasangan yang percaya pada kemurnian kisah awal tanpa butuh kemewahan berlebih.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "magnolia": {
+        "description": "Melambangkan cinta yang terus berkembang—bermula sederhana lalu tumbuh menjadi keindahan paripurna. Berlian pusat adalah cahaya harapan yang menuntun perubahan itu.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "novaria": {
+        "description": "Band ramping dengan aksen marquise memantulkan ritme lembut alam. Di pusatnya, berlian oval menangkap cahaya dari segala arah—berkilau tenang. Novaria membisikkan keanggunan, kehangatan, dan kisah cinta yang selamanya berpendar.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.40 ct",
+            "Shape": "Oval",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "pavonis": {
+        "description": "Pavonis mewujudkan elegansi abadi dan percaya diri yang tenang. Band ramping menonjolkan satu berlian princess dengan empat prong yang membiarkan cahaya menari bebas. Minimalis namun berkilau—melambangkan cinta yang lembut suaranya namun bersinar tanpa henti: effortless, tahan lama, tulus.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.30 ct",
+            "Shape": "Princess",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "selena": {
+        "description": "Cincin yang dikelilingi berlian—simbol cinta yang tak pernah pudar, selalu menuju puncak keabadian. Ideal untuk hubungan penuh gairah, percaya, dan optimis.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Princess",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "stella": {
+        "description": "Berlian solitaire yang dipeluk prong elegan menjadi jantung desainnya. Band halus dengan detail lembut menambah bisikan sofistikasi—menjadikan Stella simbol cinta yang bersinar berani namun tetap hening nan indah.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.50 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "veyla": {
+        "description": "Cincin emas putih Veyla melambangkan ketangguhan dan kemurnian—cinta yang bertahan di segala musim. Mencerminkan hubungan tanpa topeng, di mana kejujuran adalah kemewahan sejati.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Emerald",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–4 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "xaverius": {
+        "description": "Seperti cahaya pertama pagi hari, Xaverius menandai awal baru yang sempurna. Desain bersih dan presisi memancarkan kemewahan tanpa perlu pamer—kilau cerdasnya berbicara sendiri.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.20 ct",
+            "Shape": "Round",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.30 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "5–6 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      },
+      "zenith": {
+        "description": "Band berhiaskan deret berlian princess yang elegan, mencipta kilau berkesinambungan—cerminan pengabdian abadi. Ramping, halus, dan selalu berpendar: Zenith adalah esensi sofistikasi, di mana tiap kilau menandai momen cinta yang tak tergoyah.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian Alami GIA",
+            "Weight": "0.30 ct",
+            "Shape": "Princess",
+            "Cut": "Excellent",
+            "Polish": "Excellent",
+            "Symmetry": "Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Alami"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Mengilap"
+          }
+        }
+      }
+    }
+  },
+  "heritage": {
+    "details": {
+      "charlotte": {
+        "description": "Charlotte terinspirasi dari pesona anggun seorang bangsawan, dengan desain yang memikat dan keindahan yang tak lekang waktu. <space>Desain klasiknya, dipadukan dengan pengerjaan yang presisi, merefleksikan ikatan yang kian kuat di setiap detik. Cincin ini juga menjadi simbol kisah cinta yang mekar bak kelopak bunga di bawah sinar matahari, ditakdirkan untuk bersinar lebih terang dari hari ke hari. Charlotte dibuat untuk jiwa yang menghargai keindahan abadi dan janji yang bertahan selamanya.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-1.png",
+            "alt": "Cincin Charlotte tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-2.png",
+            "alt": "Cincin Charlotte tampak kanan"
+          }
+        }
+      },
+      "emma": {
+        "description": "Cincin Emma mewakili kepercayaan diri yang menawan dari sosok perempuan modern. <space>Selaras dengan napas zaman, cincin ini merayakan cinta yang kuat, setara, dan indah bersisian. Lengkung kontemporernya yang memeluk satu berlian berkilau melambangkan dua jalan yang berpadu menjadi satu.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-3.png",
+            "alt": "Cincin Emma tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-4.png",
+            "alt": "Cincin Emma tampak kanan"
+          }
+        }
+      },
+      "florence": {
+        "description": "Cincin Florence diciptakan sebagai selebrasi feminitas, dengan desain terpahat indah untuk menonjolkan pesona menawan dari keanggunan yang mekar. Lengkungan yang saling bertaut merefleksikan perjalanan dua hati dan dua jiwa dalam harmoni. Bersama, ia menceritakan kisah pengabdian: lembut namun kuat, sederhana namun bermakna dalam—seabadi cinta yang kau jaga selamanya.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct",
+            "Clarity": "VVS",
+            "Colour": "Tak Berwarna",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-5.png",
+            "alt": "Cincin Florence tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-6.png",
+            "alt": "Cincin Florence tampak kanan"
+          }
+        }
+      },
+      "katherine": {
+        "description": "Katherine—si berhati emas—mengambil inspirasi dari ketulusan wanita masa kini. <space>Dirancang dengan keanggunan abadi, cincin ini tidak sekadar janji, melainkan perayaan ikatan yang dibangun atas kepercayaan, pengabdian, dan kasih yang tak bertepi. Harmoni lembut perak dan rose gold menangkap esensi keseimbangan—dua jiwa yang bertemu, saling melengkapi, dan menyempurnakan.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Tak Berwarna",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-7.png",
+            "alt": "Cincin Katherine tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-8.png",
+            "alt": "Cincin Katherine tampak kanan"
+          }
+        }
+      },
+      "victoria": {
+        "description": "Sebuah tribut untuk ratu di masanya, Victoria menampilkan desain klasik nan abadi dengan sentuhan glamor yang tegas. <space>Victoria melambangkan kemenangan—kejayaan cinta yang bertahan, mekar, dan kian kuat di setiap momen bersama. Seimbang antara kekuatan dan keelokan, pasangan cincin ini adalah penghormatan bagi ikatan yang tak tergoyahkan, kekal, dan begitu istimewa.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.40 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-9.png",
+            "alt": "Cincin Victoria tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-10.png",
+            "alt": "Cincin Victoria tampak kanan"
+          }
+        }
+      },
+      "scarlett": {
+        "description": "Cincin Scarlett dirancang istimewa untuk mewakili sifat paripurna seorang wanita modern. <space>Mekar dengan gairah yang hangat, pasangan cincin ini melambangkan cinta yang menyala terang sekaligus mendalam. Scarlett Wedding Ring menangkap esensi romansa yang abadi. Digarap penuh keanggunan dan dimahkotai berlian berkilau, ia adalah janji yang dimeteraikan dalam emas—kuat, berkilau, dan kekal.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-11.png",
+            "alt": "Cincin Scarlett tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-12.png",
+            "alt": "Cincin Scarlett tampak kanan"
+          }
+        }
+      }
+    }
+  },
+  "soe": {
+    "details": {
+      "acacia": {
+        "description": "Semurni dan seanggun pohon akasia, cincin ini hadir dengan desain klasik yang bertahan seumur hidup. <space>Cincin ini melambangkan keanggunan dan kehalusan. Terinspirasi dari pohon Acacia sebagai simbol cinta dan kemurnian yang abadi, cincin ini menegaskan janji yang berakar pada kesetiaan dan ditakdirkan untuk langgeng.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.20 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-1.png",
+            "alt": "Cincin Acacia tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-2.png",
+            "alt": "Cincin Acacia tampak kanan"
+          }
+        }
+      },
+      "camellia": {
+        "description": "Dengan desain khas yang rapi dan sempurna, cincin Camellia dirancang khusus sebagai wujud kekaguman pada kesempurnaan. <space>Terinspirasi dari keanggunan lembut bunga kamelia, cincin ini menjadi simbol cinta murni dan pengabdian abadi. Dalam hubungan, selalu ada harapan akan cinta yang kekal dan romansa yang tak pernah pudar.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-3.png",
+            "alt": "Cincin Camellia tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-4.png",
+            "alt": "Cincin Camellia tampak kanan"
+          }
+        }
+      },
+      "deep-rooted-tree": {
+        "description": "Cincin halus ini menafsirkan kembali sosok pohon berakar kuat—simbol keteguhan dan kasih yang tak pernah padam. <space>Akar yang dalam melambangkan fondasi kokoh—empati, pengertian, dan komitmen—sementara ‘pohon’ adalah ikatan yang tumbuh ke atas. Seperti pernikahan, ia bertahan ketika akarnya kuat dan dipupuk bersama.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.15–0.20 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-5.png",
+            "alt": "Cincin Deep Rooted Tree tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-6.png",
+            "alt": "Cincin Deep Rooted Tree tampak kanan"
+          }
+        }
+      },
+      "eternal-flame": {
+        "description": "Menyerap esensi abadi dari nyala api yang tak pernah padam, cincin ini dirancang dengan anggun dan tak lekang waktu. <space>Terinspirasi dari api yang stabil, desainnya mempresentasikan cinta yang bertahan dan komitmen yang tak tergoyahkan. Gayanya yang klasik menjadi simbol halus dari ikatan seumur hidup.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.15–0.20 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-7.png",
+            "alt": "Cincin Eternal Flame tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-8.png",
+            "alt": "Cincin Eternal Flame tampak kanan"
+          }
+        }
+      },
+      "orchid": {
+        "description": "Mewah dan megah, cincin Orchid adalah penanda kelas. <space>Cincin ini mengingatkan akan keanggunan batin dan keindahan langka yang kalian bawa, serta cinta yang kalian bagi. Dirancang untuk merayakan cinta yang terus mekar dan menghormati perjalanan yang kalian jalani bersama, Orchid dibuat untuk disayangi seumur hidup.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.20 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy, Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-9.png",
+            "alt": "Cincin Orchid tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-10.png",
+            "alt": "Cincin Orchid tampak kanan"
+          }
+        }
+      },
+      "rain-shower": {
+        "description": "Menafsirkan kembali sentuhan menyejukkan dari hujan yang memukau, cincin ini dibuat tangan untuk menonjolkan desain kontemporer. <space>Setiap detail memantulkan perhatian dan seni, melahirkan karya yang terasa alami sekaligus abadi—seperti kisah cinta kalian sendiri.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.30 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-11.png",
+            "alt": "Cincin Rain Shower tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-12.png",
+            "alt": "Cincin Rain Shower tampak kanan"
+          }
+        }
+      }
+    }
+  },
+  "col": {
+    "details": {
+      "cassiopeia": {
+        "description": "Cincin Cassiopeia adalah manifestasi kekaguman pada ratu tercantik dari dunia kuno. <space>Dinamai dari seorang ratu yang kecantikannya termasyhur, cincin ini menegaskan kekuatan, kebanggaan, dan keanggunan. Memakainya menghadirkan wibawa dan elegansi, sembari mengingatkan akan pengabdian dan takdir cinta.</space>",
+        "specs": {
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy dan Frosted"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-1.png",
+            "alt": "Cincin Cassiopeia tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-2.png",
+            "alt": "Cincin Cassiopeia tampak kanan"
+          }
+        }
+      },
+      "crux": {
+        "description": "Laksana bintang yang menuntun pelayaran di samudra luas, pesona Crux yang khas menjadi simbol penunjuk arah dalam perjalanan hidup. <space>Bukan sekadar perjanjian langit—sekilas gairah yang ditangkap dalam berlian dan emas, berbisikkan rahasia takdir yang abadi dengan cahaya yang menuntun masa depan. Desainnya membangkitkan keindahan malam yang tak lekang—pengingat lembut akan ikatan yang dalam dan bertahan. Lebih dari sekadar perhiasan.</space>",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05–0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Tak Berwarna",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy dan Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-3.png",
+            "alt": "Cincin Crux tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-4.png",
+            "alt": "Cincin Crux tampak kanan"
+          }
+        }
+      },
+      "cygnus": {
+        "description": "Menawan seperti pesona seorang ratu, Cygnus melambangkan kekuatan dan kecantikan pribadi modern. <space>Setiap kilau memantulkan mimpi tanpa batas—tegas namun lembut, kuat namun anggun. Tiap kurva yang digarap dengan hasrat menyusun kisah kemewahan, sementara kehalusannya memantulkan keanggunan yang tak tergoyah.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05–0.10 ct",
+            "Colour": "Tak Berwarna",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-5.png",
+            "alt": "Cincin Cygnus tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-6.png",
+            "alt": "Cincin Cygnus tampak kanan"
+          }
+        }
+      },
+      "orion": {
+        "description": "Sebuah penghormatan untuk sang pemburu perkasa, Orion adalah karya perhiasan artisan yang memadukan desain serbaguna dan tegas. Orion menjadi penanda kekuatan, presisi, dan keanggunan yang kokoh.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Berlian GIA Natural",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Bentuk Round",
+            "Cut": "Potongan Excellent",
+            "Polish": "Poles Excellent",
+            "Symmetry": "Simetri Excellent",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Berlian Natural"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin dan Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-7.png",
+            "alt": "Cincin Orion tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-8.png",
+            "alt": "Cincin Orion tampak kanan"
+          }
+        }
+      },
+      "perseus": {
+        "description": "Perseus menampilkan desain khas yang berkarisma, terinspirasi dari pahlawan besar di masa lampau beserta zirah emasnya. <space>Dinamai dari sosok dewa yang melambangkan kekuatan dan loyalitas—mewujudkan tekad untuk berkorban demi yang dicinta dan menembus batas. Cincin ini adalah simbol pengabdian yang ditakdirkan melintasi waktu.</space>",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05–0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Tak Berwarna",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-9.png",
+            "alt": "Cincin Perseus tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-10.png",
+            "alt": "Cincin Perseus tampak kanan"
+          }
+        }
+      },
+      "pyxis": {
+        "description": "Dinamai dari kompas langit, Pyxis adalah simbol arah dan pengabdian. Diracik dari harmoni rose dan white gold serta taburan berlian, Pyxis mewakili tuntunan cinta—pengingat bahwa ke mana pun hidup membawa, dua hati akan selalu menemukan jalan untuk kembali bersama.",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05–0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Tak Berwarna",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "Putih, Kuning, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-11.png",
+            "alt": "Cincin Pyxis tampak kiri"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-12.png",
+            "alt": "Cincin Pyxis tampak kanan"
+          }
+        }
+      }
+    }
+  },
+  "privilege": {
+    "title": "LUEVE Privilege",
+    "tagline": {
+      "title": "Kisah yang Hanya Bisa Kamu Ceritakan",
+      "body": "Di <brand>LUEVE</brand>, kami tidak sekadar merancang cincin — kami mengabadikan momenmu dalam sebuah kreasi yang tak ada duanya di dunia."
+    },
+    "left": [
+      {
+        "title": "Menemukan “The One”",
+        "body": "Ahli gemologi kami menelusuri pilihan berlian atau batu permata dan memberi panduan lengkap agar kamu dapat memilih batu yang paling tepat."
+      },
+      {
+        "title": "Eksklusivitas Tanpa Kompromi",
+        "body": "Dari sketsa pertama hingga poles terakhir, setiap detail dibuat khusus untukmu—dan hanya untukmu."
+      }
+    ],
+    "right": [
+      {
+        "title": "Dirancang lintas Generasi",
+        "body": "Perajin utama kami mewujudkan visimu menjadi pusaka—sebuah karya yang layak disayang bukan hanya hari ini, tetapi juga selama berabad-abad."
+      },
+      {
+        "title": "Perawatan Seumur Hidup",
+        "body": "Dengan Layanan Pelanggan Seumur Hidup, kreasi <brand>LUEVE</brand>-mu tetap sesempurna saat kamu berkata “ya.” Karena kemewahan sejati tak pernah pudar."
+      }
+    ],
+    "image": {
+      "src": "/images/custom/privilege-center.svg",
+      "alt": "Perempuan mengenakan perhiasan LUEVE"
+    },
+    "cta": "Mulai Sekarang",
+    "waText": "Halo LUEVE, saya ingin memulai perjalanan cincin kustom saya. Bisakah Anda membantu?"
+  }
+}

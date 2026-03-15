@@ -1,0 +1,1379 @@
+{
+  "home": {
+    "title": "Welcome",
+    "tagline": "Design that actually sells."
+  },
+  "navbar": {
+    "about": "About",
+    "collection": "Collection",
+    "services": "Services",
+    "lang": {
+      "en": "EN",
+      "id": "ID"
+    }
+  },
+  "hero": {
+    "headlineLine1": "Honor Your Promise",
+    "headlineLine2": "Through Ring",
+    "desc": "Every great love story begins with a promise. <strong>Lueve</strong> was born to honor that promise through rings that capture the essence of forever. With passion, artistry, and trust at its core, Lueve turns your special moments into timeless treasures."
+  },
+  "about": {
+    "heading": "About us",
+    "cta": "View More",
+    "topRightAlt": "Rings on cushion",
+    "bottomLeftAlt": "Diamond ring close-up",
+    "bottomRightAlt": "Ring set in a box",
+    "body": "At <brand>Lueve</brand>, we provide more than just jewels. It’s your personal jewelry piece partner. Specializing in <wedding>customized wedding</wedding> and <engagement>engagement rings</engagement>, we are always ready to help you to craft pieces that are as unique and meaningful as your love story. Every spark, curves, and setting is a reflection of you your taste, your journey, your forever."
+  },
+  "discover": {
+    "title": "BESPOKE PIECES",
+    "discover": "Discover now",
+    "wedding": {
+      "title": "Wedding Rings",
+      "caption": "Each piece in our collection",
+      "alt": "Hand wearing wedding rings"
+    },
+    "engagement": {
+      "title": "Engagement Rings",
+      "caption": "Whether you're looking for the perfect",
+      "alt": "Hand wearing engagement ring"
+    }
+  },
+  "faq": {
+    "heading": {
+      "top": "ANY QUESTIONS?",
+      "bottom": " WE GOT YOU."
+    },
+    "imageAlt": "Ring box with rings",
+    "items": [
+      {
+        "q": "How long does it take to create a custom ring?",
+        "a": "Creating a custom ring usually takes 4 to 6 weeks, depending on the complexity of the design and the materials chosen. We recommend starting the process early to ensure we have enough time to perfect every detail."
+      },
+      {
+        "q": "What materials and gemstones do you use?",
+        "a": "We use only high-quality precious metals such as 18K gold, yellow gold, white gold, and rose gold. But you can request higher / lower gold percentage. Minimum start from 12K gold and maximum 20K gold option. For gemstones, we source authentic diamonds and other precious stones, all certified by reputable institutions such as the Gemological Institute of America (GIA) to ensure their authenticity and brilliance."
+      },
+      {
+        "q": "Do you offer after self service?",
+        "a": "Yes, we provide complimentary ring sizing during the design process. If you need adjustments after your ring is completed, we also offer resizing services to ensure the perfect fit. Including free jewelry cleaning and free gold re-chroming."
+      },
+      {
+        "q": "I don’t know what I want yet. Can you help me design it?",
+        "a": "Absolutely. Our team will guide you through every step from exploring your preferences to sketching ideas and finalizing the design. Whether you have a clear vision or need inspiration, we’re here to help create a ring that truly reflects your love story."
+      },
+      {
+        "q": "Do you ship internationally?",
+        "a": "Currently, our custom rings are available for domestic delivery within Indonesia. For international requests, please contact our team directly and we will be happy to assist you with the best possible arrangement."
+      },
+      {
+        "q": "What if I need the ring urgently?",
+        "a": "If you have a tight deadline, let us know during your consultation. While our standard timeline is 4–6 weeks, we may be able to accommodate urgent orders depending on the design and production schedule."
+      }
+    ]
+  },
+  "experience": {
+    "heading": { "top": "Customer", "bottom": " Experience" },
+    "tagline": "Our customers helped us reach the best with their good and useful comments and suggestions.",
+    "ariaLabel": "Customer experience slides",
+    "slides": [
+      {
+        "title": "Kevin & Tiara",
+        "desc": "From the very beginning, I could feel Lueve was different. I’d visited a few brands to look for wedding rings, and the team here was incredibly patient helping me choose the right model. When the rings arrived, I was amazed—the details are refined, the inside fits comfortably, and the diamonds shine beautifully. It feels like the true definition of my wedding ring. Thank you, Lueve.",
+        "imageSrc": "/images/experience/kevin-tiara.jpeg",
+        "imageAlt": "Kevin & Tiara"
+      },
+      {
+        "title": "Peter",
+        "desc": "The service was fast and reassuring from start to finish. I ordered a proposal ring and was worried about timing, but everything was completed right on schedule—and the result exceeded expectations. During the proposal, the first thing she said was, “Wow… the ring is so beautiful.” I was pretty proud. Thank you, Lueve.",
+        "imageSrc": "/images/experience/peter.jpg",
+        "imageAlt": "Peter"
+      },
+      {
+        "title": "Rico & Monica",
+        "desc": "I didn't expect this custom ring to be so far beyond my expectations. The design is elegant and comfortable on my finger, and it doesn't feel uncomfortable at all when worn. Thank you, sis.",
+        "imageSrc": "/images/experience/rico-monica.jpg",
+        "imageAlt": "Rico & Monica"
+      },
+      {
+        "title": "William & Clarisa",
+        "desc": "From the first consultation, the admin responded quickly and explained the material options in great detail. When the rings were finished, I fell in love immediately and felt excited for the day. The result was even better than we expected at first.",
+        "imageSrc": "/images/experience/william-carissa.jpg",
+        "imageAlt": "William & Clarisa"
+      },
+      {
+        "title": "Edward",
+        "desc": "Finally engaged. I didn’t expect this ring could mean so much to her. Thank you, Lueve.",
+        "imageSrc": "/images/experience/edward.jpg",
+        "imageAlt": "Edward"
+      }
+    ]
+  },
+  "collectionShowcase": {
+    "vertical": "Our Collection",
+    "desc": "Explore our collections of handcrafted jewelry each pieces designed to capture emotion, celebrate connections, and stand the test of time.",
+    "slides": [
+      {
+        "imageSrc": "/images/showcase/center.jpg",
+        "imageAlt": "Wedding rings on white plate"
+      },
+      {
+        "imageSrc": "/images/showcase/right.jpg",
+        "imageAlt": "Engagement ring closeup"
+      },
+      {
+        "imageSrc": "/images/showcase/left.jpg",
+        "imageAlt": "Diamond earrings"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-4.jpg",
+        "imageAlt": "pic-4"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-5.jpg",
+        "imageAlt": "pic-5"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-6.jpg",
+        "imageAlt": "pic-6"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-7.jpg",
+        "imageAlt": "pic-7"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-8.jpg",
+        "imageAlt": "pic-8"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-9.jpg",
+        "imageAlt": "pic-9"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-10.jpg",
+        "imageAlt": "pic-10"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-11.jpg",
+        "imageAlt": "pic-11"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-12.jpg",
+        "imageAlt": "pic-12"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-13.jpg",
+        "imageAlt": "pic-13"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-14.jpg",
+        "imageAlt": "pic-14"
+      },
+      {
+        "imageSrc": "/images/showcase/pic-15.jpg",
+        "imageAlt": "pic-15"
+      }
+    ]
+  },
+  "aboutBrand": {
+    "title": "About LUEVE",
+    "left": {
+      "heading": "Brand Logo",
+      "subheading": "Certificate of trademark registration"
+    },
+    "logos": {
+      "wordmarkAlt": "LUEVE logotype on grid",
+      "markAlt": "LUEVE emblem on grid"
+    },
+    "reg": {
+      "label": "Registration Number",
+      "value": "IDM000749086"
+    },
+    "quote": "“Remember the moment you said ‘I do’ ”",
+    "body": "We chose this slogan to remind every couple to always cherish the day they committed themselves to one another in the sacred bond of marriage. It’s more than a ring, it’s a timeless reminder of your most meaningful promise."
+  },
+  "whyShop": {
+    "title": "Why Shop At Lueve ?",
+    "bgAlt": "Close-up of a ring background",
+    "items": [
+      {
+        "title": "Exquisite Results, Bespoke for You",
+        "desc": "Since 2018, LUEVE has specialized in creating engagement and wedding rings that go beyond jewelry,  we craft enduring legacies. Each ring is a refined artistry, advanced techniques, and meaningful intention.",
+        "imageSrc": "/icons/why-shop/logo.svg",
+        "imageAlt": "LUEVE logo"
+      },
+      {
+        "title": "Meaningful Luxury with Lasting Benefits",
+        "desc": "LUEVE rings are designed not only to shine on the day you say 'I do', but to accompany you for a lifetime. From exceptional comfort to symbolic design storytelling, every detail is made to serve both form and emotion.",
+        "imageSrc": "/icons/why-shop/ring.svg",
+        "imageAlt": "Ring design"
+      },
+      {
+        "title": "Elite Service Support",
+        "desc": "Enjoy lifetime service including complimentary ring cleaning, polishing, and resizing support. Our service doesn’t end at the delivery that continues, just like your love.",
+        "imageSrc": "/icons/why-shop/handshake.svg",
+        "imageAlt": "Handshake symbolizing partnership"
+      },
+      {
+        "title": "Exclusivity Rooted in Your Story",
+        "desc": "No two rings are alike. Every design is created exclusively for you, inspired by your journey and craftsmanship with rare precision. With LUEVE, your love story becomes a one of a kind heirloom.",
+        "imageSrc": "/icons/why-shop/heart.svg",
+        "imageAlt": "Heart symbolizing love"
+      },
+      {
+        "title": "Only the Finest Gems",
+        "desc": "Our diamonds and gemstones are exclusively selected through magnifying glass. GIA certified start from 0,20 carat each. Both in D E F color and VVS clarity because true luxury starts with trust in every stone.",
+        "imageSrc": "/icons/why-shop/gia.svg",
+        "imageAlt": "GIA logo"
+      }
+    ]
+  },
+  "ourStory": {
+    "title": "How Our Story Began",
+    "items": [
+      {
+        "title": "Founded in 2018",
+        "step": "01",
+        "desc": "Lueve began as a jewelry custom consultation dedicated to creating one of a kind engagement and wedding rings. Begin with unreleased store, just a passion for artistry and devotion to detail, we started by crafting intimate pieces for clients.",
+        "imageSrc": "/images/story/founded-01.svg",
+        "imageAlt": "Hands wearing rings (2018)",
+        "overlay": "right"
+      },
+      {
+        "title": "Exclusive Personal Ring",
+        "step": "02",
+        "desc": "As word spread, Lueve began to serve more couples that are  looking for deep personal rings. Something they couldn’t find in conventional jewelry stores. Every piece was handcrafted with care, for clients who valued meaning above all.",
+        "imageSrc": "/images/story/exclusive-02.svg",
+        "imageAlt": "Exclusive personal ring detail",
+        "overlay": "left"
+      },
+      {
+        "title": "A trusted Name",
+        "step": "03",
+        "desc": "As the years unfolded, more and more couples came to us not for trends, but for authenticity. With each story shared and each ring delivered, LUEVE evolved from a hidden gem into a trusted name among those who appreciate understated luxury and emotional depth in fine jewelry.",
+        "imageSrc": "/images/story/trusted-03.svg",
+        "imageAlt": "Couple’s hands wearing rings",
+        "overlay": "right"
+      },
+      {
+        "title": "LUEVE",
+        "step": "04",
+        "desc": "Whether it’s a grand wedding or an intimate proposal, LUEVE becomes part of your milestone.",
+        "imageSrc": "/images/story/lueve-04.svg",
+        "imageAlt": "Ring on fabric",
+        "overlay": "left"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "PRIVACY POLICY",
+    "sections": [
+      {
+        "num": "01",
+        "title": "INFORMATION WE COLLECT",
+        "intro": "We may collect the following information:",
+        "list": [
+          "Name, email address, phone number, shipping address",
+          "Order details and custom preferences",
+          "Communication history (including via WhatsApp or email)"
+        ]
+      },
+      {
+        "num": "02",
+        "title": "HOW WE USE YOUR INFORMATION",
+        "paragraphs": [
+          "Lueve began as a jewelry custom consultation dedicated to creating one of a kind engagement and wedding rings. Begin with unreleased store, just a passion for artistry and devotion to detail, we started by crafting intimate pieces for clients."
+        ],
+        "sub": "Your data is used to:",
+        "list2": [
+          "Process and fulfill orders.",
+          "Provide customer service and updates.",
+          "Offer service supports.",
+          "Improve our service and product offerings.",
+          "We do not sell, rent, or share your personal data to third parties for marketing purposes."
+        ]
+      },
+      {
+        "num": "03",
+        "title": "Information We Collect",
+        "paragraphs": [
+          "By submitting your contact information or initiating a chat via WhatsApp, you consent to receive communication from LUEVE regarding your order, promotions, or updates. You can opt out at any time."
+        ]
+      },
+      {
+        "num": "04",
+        "title": "DATA SECURITY",
+        "paragraphs": [
+          "We take reasonable steps to protect your personal information. However, no method of transmission over the internet is 100% secure."
+        ]
+      },
+      {
+        "num": "05",
+        "title": "THIRD-PARTY SERVICES",
+        "paragraphs": [
+          "If you interact with embedded services like payment gateways or WhatsApp, their respective privacy policies apply."
+        ]
+      },
+      {
+        "num": "06",
+        "title": "POLICY UPDATES",
+        "paragraphs": [
+          "This policy may be updated periodically. Continued use of our services implies your acceptance of the latest version."
+        ]
+      }
+    ]
+  },
+  "customRingSpotlight": {
+    "body": "Begin your custom journey with <brand>LUEVE</brand>, where every details tell your love story.",
+    "cta": { "label": "Let’s Started" },
+    "image": {
+      "src": "/images/custom/hero-custom-ring.svg",
+      "alt": "Custom ring on hand"
+    }
+  },
+  "privilege": {
+    "title": "Lueve Privilege",
+    "tagline": {
+      "title": "A Story Only You Can Tell",
+      "body": "At LUEVE, we don’t just design any  rings. We also  immortalize your moment in a creation that exists nowhere else in the world."
+    },
+    "left": [
+      {
+        "title": "Finding “The One”",
+        "body": "Our gem experts search widely for diamonds or gemstones options and provide all the guidance and advice needed to choose the perfect stones."
+      },
+      {
+        "title": "Exclusivity Without Compromise",
+        "body": "From the first sketch to the final polish, every detail is crafted for you and only you."
+      }
+    ],
+    "right": [
+      {
+        "title": "Designed for Generations",
+        "body": "Our master artisans transform your vision into a reality. A piece worthy of being treasured not only today, but for centuries to come."
+      },
+      {
+        "title": "A Legacy of Care",
+        "body": "With our Lifetime Customer Service, your LUEVE creation remains as perfect as the day you said “yes.” Because true luxury never fades."
+      }
+    ],
+    "image": {
+      "src": "/images/custom/privilege-center.svg",
+      "alt": "Woman wearing LUEVE jewelry"
+    },
+    "cta": "Get Started",
+    "waText": "Halo , aku mau nanya tentang cincin"
+  },
+  "engagement": {
+    "details": {
+      "astrae": {
+        "description": "A rose gold spiral ring with a series of diamonds surrounding the main stone, Representing an eternal promise that always returns, like the tireless orbit of the moon. A perfect combination for couples who believe in the harmonious and consistent rhythm of love.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.30 ct",
+            "Shape": "Emerald Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow,  Rose, Champagne,",
+            "Approx Metal Weight": "8–10 g",
+            "Metal Finishing": "Satin"
+          }
+        }
+      },
+      "aurellia": {
+        "description": "Pure light that needs no excessive ornamentation. Aurellia is the personification of confident elegance. Every facet of its diamond cut is optimized to dance with light, swirling and hinting at eternity and loyalty.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.05 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–4 g",
+            "Metal Finishing": "Satin"
+          }
+        }
+      },
+      "beatrix": {
+        "description": "Like the luxurious and elegant Beatrix, this ring presents classic charm with a modern touch. The main diamond creates a perfect silhouette. Its timeless design reflects everlasting happiness.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "blossom": {
+        "description": "Blossom captures the beauty of a flower in full bloom, bringing joy and pleasure. This ring represents a couple's relationship that progresses gradually, with love growing stronger with each passing day.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.75-1 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "5-7 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "celestia": {
+        "description": "This ring features a blooming star shape, surrounded by diamonds as if bringing forth new stars. Like a golden crown and a combination of diamonds symbolize love that continues to evolve and becomes the center of hope.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.36 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "4–5 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "chrysalis": {
+        "description": "A champagne alloy ring is like love that is strong yet retains its softness. The beaded band , reminding us that the most beautiful love often arises from struggle.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.30 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Satin and Half Round Beaded"
+          }
+        }
+      },
+      "elara": {
+        "description": "This ring captures the essence of calm and eternal devotion. The open design symbolizes two souls meeting in perfect harmony, while intricate side engravings evoke timeless elegance. A single brilliant-cut diamond rests at its heart, reflecting love’s quiet strength, framed by a polished finish that gleams with understated luxury.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "4 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "freesia": {
+        "description": "Freesia symbolizes sincerity and everlasting love. The design of the 'blooming' flower on the finger represents a relationship that continues to grow, yet remains strong like roots, emphasizing serious commitment and elegance.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.50 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "3–5 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "luminare": {
+        "description": "Inspired by the calm radiance of eternal light, Luminare captures the essence of love that never dims. <space>Every curve and delicate beaded detail is crafted to reflect harmony and timeless grace. Luminare is a symbol of love that shines quietly, yet forever.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Emerald Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "4–5 g",
+            "Metal Finishing": "Satin and Half Round Beaded"
+          }
+        }
+      },
+      "lxia": {
+        "description": "The diamond ring represents love as the beginning of all beauty. It is suitable for couples who believe in the purity of the initial beautiful relationship story without needing excessive luxury.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "magnolia": {
+        "description": "This ring symbolizes love that continually evolves starting from simplicity, then developing into perfect beauty. The center diamond is the light of hope that guides this change.",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "novaria": {
+        "description": "Its delicate band, adorned with marquise-shaped accents, reflects the beauty of nature’s gentle rhythm. At the center, an oval-cut diamond captures light from every angle, shimmering with quiet brilliance. Novaria whispers of elegance, warmth, and a love story that forever sparkles in time.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.40 ct",
+            "Shape": "Oval Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "pavonis": {
+        "description": "Pavonis embodies timeless elegance and quiet confidence. The slender band draws the eye to a single princess-cut diamond, gracefully held by four prongs that let light dance freely.  Minimal yet radiant, it symbolizes a love that speaks softly but shines endlessly effortless, enduring, and beautifully sincere.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.30 ct",
+            "Shape": "Princess Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "selena": {
+        "description": "A ring surrounded by diamonds as a representation of a love symbol that never fades, always reaching the pinnacle of eternity. Perfect for our relationship full of passion, trust, and optimism.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Princess Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "stella": {
+        "description": "The solitaire diamond, gracefully cradled in elegant prongs, becomes the heart of its luminous design. A refined band with delicate detailing adds a whisper of sophistication, making Stella a symbol of love that shines boldly yet beautifully serene.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.50 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "3–4 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "veyla": {
+        "description": "The Veyla white gold ring symbolizes resilience and purity, representing love that endures through all seasons. It reflects a relationship without masks, where honesty is the true luxury.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Emerald Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–4 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "xaverius": {
+        "description": "Like the first light in the morning, Xaverius symbolizes the perfect new beginning. It’s clean and precise design reflects a luxury that doesn't need to be flashy because its clever shine speaks for itself.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.30 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "5–6 g",
+            "Metal Finishing": "Glossy"
+          }
+        }
+      },
+      "zenith": {
+        "description": "Its band is elegantly lined with princess cut diamonds, creating a continuous shimmer that mirrors eternal devotion. Sleek, refined, and endlessly radiant — Zenith is the embodiment of sophistication, where every sparkle marks a moment of unwavering love.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.30 ct",
+            "Shape": "Princess Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "2–3 g",
+            "Metal Finishing": "and Glossy"
+          }
+        }
+      }
+    }
+  },
+  "terms": {
+    "title": "TERMS & CONDITIONS",
+    "bgAlt": "Background of jewelry box",
+    "sections": [
+      {
+        "title": "INTRODUCTION",
+        "intro": "Welcome to LUEVE. By accessing our website, using our services, or purchasing our products, you agree to be bound by the following Terms & Conditions. Please read them carefully before proceeding."
+      },
+      {
+        "title": "CUSTOM ORDERS",
+        "list": [
+          "All LUEVE jewelry is made to order and personalized based on the client’s preferences",
+          "Due to the bespoke nature of our work, orders are non-refundable once production begins.",
+          "We provide 3D digital previews and consultation before production. Once approved, the production can began."
+        ]
+      },
+      {
+        "title": "PAYMENT",
+        "list": [
+          "Full payment or deposit is required before production starts.",
+          "We accept payment through bank transfer or other methods as informed during consultation.",
+          "Payment confirmations must be sent within 24 hours to secure your order slot."
+        ]
+      },
+      {
+        "title": "TIMELINE & DELIVERY",
+        "list": [
+          "Production time typically ranges from 3 to 4 weeks, depending on design complexity and availability of gemstones.",
+          "We will provide estimated delivery dates, but delays due to unforeseen circumstances (e.g., shipping issues, sourcing delays) may occur.",
+          "All products are shipped with tracking. LUEVE is not liable for courier delays or mishandling."
+        ]
+      },
+      {
+        "title": "PRODUCT WARRANTY & AFTERCARE",
+        "list": [
+          "We provide lifetime complimentary services including cleaning, polishing, and resizing (two times, terms apply).",
+          "Warranty excludes damage due to misuse, accidents, or unauthorized repairs.",
+          "GIA certificates are only provided for diamonds up to 0.20ct."
+        ]
+      },
+      {
+        "title": "INTELLECTUAL PROPERTY",
+        "intro": "All ring designs, brand materials, and content on this site are the property of LUEVE. Reproduction, copying, or redistribution is strictly prohibited without written permission."
+      },
+      {
+        "title": "RIGHT TO REFUSE",
+        "intro": "We reserve the right to decline any custom project that conflicts with our brand values or production capabilities."
+      }
+    ]
+  },
+  "heritage": {
+    "details": {
+      "charlotte": {
+        "description": "The Charlotte takes its inspiration from the dignified charm of a royal darling, with design that is captivating and timelessly breathtaking. <space>Its classic design, paired with exquisite craftsmanship, reflects a bond that grows stronger with every heartbeat. This ring is also a symbol of a love story blooming like petals in the sun, destined to shine brighter with every passing day. Charlotte is crafted for the soul that cherishes timeless beauty and a promise that lasts forever.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-1.png",
+            "alt": "Charlotte ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-2.png",
+            "alt": "Charlotte ring right side"
+          }
+        }
+      },
+      "emma": {
+        "description": "The Emma ring represents the stunning confidence of a modern woman. <space>In harmony with the spirit of today’s world, the   ring celebrates a love that is strong, equal, and beautifully intertwined. With their sleek, contemporary curves embracing a single brilliant diamond, they symbolize two distinct paths coming together as one.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-3.png",
+            "alt": "Emma ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-4.png",
+            "alt": "Emma ring right side"
+          }
+        }
+      },
+      "florence": {
+        "description": "The Florence ring is specifically created as a  celebration for femininity, with brilliantly sculptured design to showcase the irresistible and captivating charm of a blossoming beauty. With its intertwined bands, reflects the intertwining of two lives, two hearts, and two souls into one harmonious journey. Together, they tell a story of devotion: delicate yet strong, simple yet has a deep meaning, as eternal as the love you vow to cherish forever.",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.15 ct",
+            "Clarity": "VVS",
+            "Colour": "Colourless",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-5.png",
+            "alt": "Florence ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-6.png",
+            "alt": "Florence ring right side"
+          }
+        }
+      },
+      "katherine": {
+        "description": "The Katherine, or she with the heart of gold, takes  the inspiration from the benevolence of  contemporary women. <space>Crafted with timeless grace, the ring reflect more than just a promise but also  a celebration of a bond built on trust, devotion, and endless affection. The smooth harmony of silver and rose gold captures the essence of balance  where two souls meet, complement, and complete each other.</space>",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Colourless",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-7.png",
+            "alt": "Katherine ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-8.png",
+            "alt": "Katherine ring right side"
+          }
+        }
+      },
+      "victoria": {
+        "description": "A tribute to the queen of an era, the Victoria ring  exhibits a classic and timeless design with a bold touch of glamorous charm. <space>Victoria represents triumph the victory of love that has endured, blossomed, and grown stronger with every shared moment. Perfectly balanced between strength and grace, this pair of ring is a tribute to a bond that is unshakable, eternal, and beautifully unique.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.40 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-9.png",
+            "alt": "Victoria ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-10.png",
+            "alt": "Victoria ring right side"
+          }
+        }
+      },
+      "scarlett": {
+        "description": "The Scarlett ring is a perfection distinctively designed to represent the wholesome nature of a modern lady. <space>It also blooms with vibrant passion, this pair of ring represents love that ignites bright and deep. The Scarlett Wedding Ring capture that same essence of timeless romance. Crafted with grace and crowned with a brilliant diamond, they are a promise sealed in gold strong, glowing, and eternal.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Sand Blaster, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/heritage/heritage-11.png",
+            "alt": "scarlett ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/heritage/heritage-12.png",
+            "alt": "scarlett ring right side"
+          }
+        }
+      }
+    }
+  },
+  "soe": {
+    "details": {
+      "acacia": {
+        "description": "As pure and elegant as an Acacia, this ring features a classic design that will last a lifetime. <space>This ring symbolizes grace and elegance. The Acacia ring draws inspiration from the Acacia tree as a timeless symbol of love and purity. This ring shows a promise that's rooted in loyalty and destined to last forever.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.20 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin, Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-9.png",
+            "alt": "Acacia ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-10.png",
+            "alt": "Acacia ring right side"
+          }
+        }
+      },
+      "camellia": {
+        "description": "Featuring a distinctive and flawless design, the Camellia ring is exclusively crafted as an adoration for perfection. <space>Inspired by the delicate elegance of the camellia flower, this ring is a symbol of pure love and eternal devotion. While in a relationship theres hope of eternal love and everlasting romanticization.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.15 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-3.png",
+            "alt": "Camellia ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-4.png",
+            "alt": "Camellia ring right side"
+          }
+        }
+      },
+      "deep-rooted-tree": {
+        "description": "This piece of refined ring is a reinterpretation of a strongly grounded tree, brilliantly bringing to life a symbol of humble and undying affection. <space>A deep rooted tree signifies something with a strong, firm foundation, like empathy, understanding, or connection. The roots represent this deep foundation, while the 'tree' is the subject being grounded. just like in a marriage where both had to have strong and firm foundation to make the marriage last long.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.15 ct - 0.20 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-5.png",
+            "alt": "Deep Rooted Tree ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-6.png",
+            "alt": "Deep Rooted Tree ring right side"
+          }
+        }
+      },
+      "eternal-flame": {
+        "description": "Embracing the eternal essence of the everlasting flame, this exquisitely crafted piece of ring embodies both elegance and timelessness. <space>Inspired by the steady flame, this ring presents an elegant design that embodies enduring love and unwavering commitment. Its timeless style serves as a refined symbol of a lifelong bond.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.15 ct - 0.20 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-7.png",
+            "alt": "Eternal Flame ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-8.png",
+            "alt": "Eternal Flame ring right side"
+          }
+        }
+      },
+      "orchid": {
+        "description": "Luxurious and magnificent, the Orchid ring is the sign of class. <space>This ring serves as a reminder of your inner grace and the rare beauty you both bring to the world, as well as the enduring love you share. Designed to celebrate a love that blossoms eternally and to honor the shared journey you embark upon together, the Orchid Ring is crafted to be treasured for a lifetime.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.10 ct",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.20 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy, Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-1.png",
+            "alt": "Orchid ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-2.png",
+            "alt": "Orchid ring right side"
+          }
+        }
+      },
+      "rain-shower": {
+        "description": "Reimagining the fantastic touch of drazzling rain, this piece of ring is exclusively handcrafted to highlight its contemporary design. <space>Every detail reflects care and artistry, creating a piece that feels as natural and timeless as your own love story.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Weight": "0.10 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.30 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/soe/soe-11.png",
+            "alt": "Rain Shower ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/soe/soe-12.png",
+            "alt": "Rain Shower ring right side"
+          }
+        }
+      }
+    }
+  },
+  "col": {
+    "details": {
+      "cassiopeia": {
+        "description": "The Cassiopeia ring is a manifestation of adoration to the ancient world’s most beautiful queen. <space>Cassiopeia was named after a queen that is so beautiful that makes her one of the prettiest of all time. By wearing this ring emphasizes strength, pride, and beauty. This ring also shows elegance to the one who  wears this ring because it reminds the devotion and destiny with love.</space>",
+        "specs": {
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy and Frosted"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-1.png",
+            "alt": "Cassiopeia ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-2.png",
+            "alt": "Cassiopeia ring right side"
+          }
+        }
+      },
+      "crux": {
+        "description": "Like the stars navigating through the wide ocean, the unique charm of the Crux ring serves as a mesmerizing ornamental piece symbolizing a guide for a life voyage. <space>This is not just a celestial covenant, a glance of passion captured in diamond and gold, whispering the eternal secrets of destiny with a light that shines the vision of the future. Its design evokes the timeless beauty of the night sky, serving as a constant, gentle reminder of a deep and enduring connection. It is more than a piece of jewelry.</space>",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05 - 0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Colourless",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy and Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-3.png",
+            "alt": "Crux ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-4.png",
+            "alt": "Crux ring right side"
+          }
+        }
+      },
+      "cygnus": {
+        "description": "As enticing as the seduction of a queen, the Cygnus ring symbolizes strength and beauty of a modern personality. <space>Each gleam reflects the boundless dreams of a modern soul bold yet delicate, powerful yet graceful. While each curves served with passion its luxurious visualise tales of elegance while each refined curve reflects the unyielding elegance.</space>",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05 - 0.10 ct",
+            "Colour": "Colourless",
+            "Clarity": "VVS",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11  – 15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-5.png",
+            "alt": "Crux ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-6.png",
+            "alt": "Crux ring right side"
+          }
+        }
+      },
+      "orion": {
+        "description": "A homage to the mighty hunter, the Orion is an artisan piece of fine jewelry showcasing a versatile and bold design. Orion is a testament to strength, precision, and unyielding elegance.",
+        "specs": {
+          "centerDiamond": {
+            "Grading & Certification": "Natural GIA Diamond",
+            "Weight": "0.20 ct/pcs",
+            "Shape": "Round Shape",
+            "Cut": "Excellent Cut",
+            "Polish": "Excellent Cut",
+            "Symmetry": "Excellent Cut",
+            "Colour": "F",
+            "Clarity": "VVS",
+            "Type": "Natural Diamond"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin and Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-7.png",
+            "alt": "Orion ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-8.png",
+            "alt": "Orion ring right side"
+          }
+        }
+      },
+      "perseus": {
+        "description": "The Perseus ring features a distinctive design as charismatic as the ancient times’ greatest hero and his gold armor. <space>The ring was named after the God Himself that symbolizes strength and loyalty. It visualizes the willing to sacrifice everything for His lover and to afford the impossible. This ring is also a symbol of devotion destined to endure through time.</space>",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05 -0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Colourless",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Satin"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-9.png",
+            "alt": "Perseus ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-10.png",
+            "alt": "Perseus ring right side"
+          }
+        }
+      },
+      "pyxis": {
+        "description": "It named after the celestial compass, this is a symbol of direction and devotion. Crafted in the harmony of rose and white gold, adorned with sparkling diamonds, Pyxis represents the guidance of love a reminder that no matter where life takes you, two hearts will always find their way back to each other.",
+        "specs": {
+          "sideDiamond": {
+            "Total Weight (Carat)": "0.05 -0.10 ct",
+            "Clarity": "VVS",
+            "Colour": "Colourless",
+            "Cut": "Round"
+          },
+          "metal": {
+            "Band Metal Color": "White, Yellow, Rose, Champagne",
+            "Approx Metal Weight": "11–15 g",
+            "Metal Finishing": "Glossy"
+          }
+        },
+        "picture": {
+          "left": {
+            "src": "/images/detail-catalog/col/col-11.png",
+            "alt": "Pyxis ring left side"
+          },
+          "right": {
+            "src": "/images/detail-catalog/col/col-12.png",
+            "alt": "Pyxis ring right side"
+          }
+        }
+      }
+    }
+  }
+}
