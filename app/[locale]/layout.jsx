@@ -1,11 +1,8 @@
-// app/[locale]/layout.jsx
 import "../globals.css";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import Navbar from "../components/ui/Navbar";
-import Footer from "../components/ui/Footer";
 
 const LOCALES = ["en", "id"];
 
@@ -13,13 +10,10 @@ export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
 }
 
-// Kunci supaya Next gak nerima param baru di runtime
 export const dynamicParams = false;
-// (opsional) full statis
 export const dynamic = "error";
 export const revalidate = false;
 
-// --- (kode font dan sanitizer kamu tetap sama) ---
 const quattro = localFont({
   src: [
     {
@@ -46,7 +40,11 @@ const minionPro = localFont({
       weight: "400",
       style: "normal",
     },
-    { path: "../fonts/MinionPro-Medium.woff2", weight: "500", style: "normal" },
+    {
+      path: "../fonts/MinionPro-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
   ],
   variable: "--font-minion-pro",
   display: "swap",
@@ -66,7 +64,6 @@ export const metadata = {
   },
 };
 
-// --- Sanitizer kamu tetap ---
 function sanitizeIntlKeys(input, stats) {
   if (Array.isArray(input)) return input.map((v) => sanitizeIntlKeys(v, stats));
   if (input && typeof input === "object") {
@@ -90,9 +87,10 @@ export default async function RootLayout({ children, params }) {
     const raw = (await import(`../../messages/${locale}.json`)).default;
     const stats = { count: 0 };
     messages = sanitizeIntlKeys(raw, stats);
+
     if (process.env.NODE_ENV === "development" && stats.count > 0) {
       console.warn(
-        `[intl] Sanitized ${stats.count} message key(s) containing '.' → '·'`
+        `[intl] Sanitized ${stats.count} message key(s) containing '.' → '·'`,
       );
     }
   } catch (error) {
@@ -106,9 +104,7 @@ export default async function RootLayout({ children, params }) {
         className={`${quattro.variable} ${minionPro.variable} ${poppins.variable} ${futuraDee.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar />
-          <main className="pt-[96px] md:pt-[120px]">{children}</main>
-          <Footer />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
