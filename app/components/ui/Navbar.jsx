@@ -15,7 +15,7 @@ export default function Navbar() {
   const other = locale === "en" ? "id" : "en";
   const index = React.useMemo(
     () => buildRingsIndexFromMessages(locale, { withAlt: true }),
-    [locale]
+    [locale],
   );
 
   const [open, setOpen] = useState(false); // mobile main
@@ -78,6 +78,20 @@ export default function Navbar() {
                          after:duration-200 hover:after:w-full"
             >
               {t("about")}
+            </Link>
+          </li>
+
+          {/* Blogs */}
+          <li>
+            <Link
+              href="/blogs"
+              locale={locale}
+              onClick={hardClose}
+              className="relative inline-block uppercase transition-opacity hover:opacity-70 hover:font-semibold
+                 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#800000] after:transition-[width]
+                 after:duration-200 hover:after:w-full"
+            >
+              {t("blog")}
             </Link>
           </li>
 
@@ -339,6 +353,18 @@ export default function Navbar() {
                   className="block px-4 py-3 uppercase tracking-widest font-poppins text-lg font-medium hover:bg-white/5 transition-colors"
                 >
                   {t("about")}
+                </Link>
+              </li>
+
+              {/* Blogs */}
+              <li>
+                <Link
+                  href="/blogs"
+                  locale={locale}
+                  onClick={hardClose}
+                  className="block px-4 py-3 uppercase tracking-widest font-poppins text-lg font-medium hover:bg-white/5 transition-colors"
+                >
+                  Blogs
                 </Link>
               </li>
 

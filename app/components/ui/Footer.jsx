@@ -64,6 +64,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/blogs"
+                  className="hover:underline underline-offset-4"
+                >
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/#customer-experience"
                   className="hover:underline underline-offset-4"
                 >
@@ -374,6 +382,14 @@ export default function Footer() {
                     className="hover:underline underline-offset-4"
                   >
                     Our Collection
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blogs"
+                    className="hover:underline underline-offset-4"
+                  >
+                    Blogs
                   </Link>
                 </li>
               </ul>
