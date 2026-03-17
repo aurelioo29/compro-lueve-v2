@@ -1,12 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "tailwindcss-debug-screens";
+@import "quill/dist/quill.snow.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   /* Custom Font */
   --font-minion-pro: var(--font-minion-pro);
   --font-poppins: var(--font-poppins);
@@ -121,18 +123,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-@import "swiper/css";
-@import "swiper/css/effect-coverflow";
-@import "swiper/css/pagination";
-
+/* =========================
+   SWIPER
+========================= */
 .collection-coverflow {
   padding-top: 10px;
-  padding-bottom: 40px; /* space for dots */
+  padding-bottom: 40px;
 }
 
 .collection-coverflow-slide {
@@ -149,21 +151,33 @@
     opacity 0.3s ease,
     transform 0.3s ease;
 }
+
 .collection-coverflow .swiper-slide-active {
   opacity: 1;
 }
 
-/*  */
 .collection-coverflow-left .swiper-wrapper {
-  justify-content: flex-start; /* paksa start dari kiri */
+  justify-content: flex-start;
 }
 
 .collection-coverflow-left .swiper {
-  overflow: visible; /* biar coverflow depth gak kepotong */
+  overflow: visible;
+}
+
+/* =========================
+   QUILL EDITOR
+========================= */
+.blog-quill-editor {
+  width: 100%;
 }
 
 .blog-quill-editor .ql-toolbar {
   background: #f9fafb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .blog-quill-editor .ql-container {
@@ -171,14 +185,244 @@
   min-height: 500px;
   font-size: 14px;
   color: #374151;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .blog-quill-editor .ql-editor {
   min-height: 280px;
   line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .blog-quill-editor .ql-editor.ql-blank::before {
   color: #9ca3af;
   font-style: normal;
+}
+
+/* =========================
+   QUILL PREVIEW / BLOG CONTENT
+========================= */
+.blog-content-scroll {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.blog-content-preview {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  color: #111827;
+  line-height: 1.8;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.blog-content-preview.ql-editor {
+  padding: 0;
+}
+
+.blog-content-preview * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.blog-content-preview > *:first-child {
+  margin-top: 0;
+}
+
+.blog-content-preview > *:last-child {
+  margin-bottom: 0;
+}
+
+.blog-content-preview p {
+  margin: 0 0 1rem 0;
+}
+
+.blog-content-preview p:empty {
+  display: none;
+}
+
+.blog-content-preview h1,
+.blog-content-preview h2,
+.blog-content-preview h3,
+.blog-content-preview h4,
+.blog-content-preview h5,
+.blog-content-preview h6 {
+  margin: 1.25rem 0 0.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111827;
+}
+
+.blog-content-preview h1 {
+  font-size: 2rem;
+}
+
+.blog-content-preview h2 {
+  font-size: 1.5rem;
+}
+
+.blog-content-preview h3 {
+  font-size: 1.25rem;
+}
+
+.blog-content-preview h4 {
+  font-size: 1.125rem;
+}
+
+.blog-content-preview h5,
+.blog-content-preview h6 {
+  font-size: 1rem;
+}
+
+/* ===== LIST FIX: bullet/number wajib nongol ===== */
+.blog-content-preview ul,
+.blog-content-preview ol,
+.blog-content-preview.ql-editor ul,
+.blog-content-preview.ql-editor ol {
+  margin: 0 0 1rem 0;
+  padding-left: 1.75rem !important;
+  list-style-position: outside !important;
+}
+
+.blog-content-preview ul,
+.blog-content-preview.ql-editor ul {
+  list-style-type: disc !important;
+}
+
+.blog-content-preview ol,
+.blog-content-preview.ql-editor ol {
+  list-style-type: decimal !important;
+}
+
+.blog-content-preview ul ul,
+.blog-content-preview.ql-editor ul ul {
+  list-style-type: circle !important;
+}
+
+.blog-content-preview ul ul ul,
+.blog-content-preview.ql-editor ul ul ul {
+  list-style-type: square !important;
+}
+
+.blog-content-preview li,
+.blog-content-preview.ql-editor li {
+  display: list-item !important;
+  margin-bottom: 0.35rem;
+}
+
+.blog-content-preview li::marker,
+.blog-content-preview.ql-editor li::marker {
+  color: #111827;
+}
+
+.blog-content-preview blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #d1d5db;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.blog-content-preview strong {
+  font-weight: 700;
+}
+
+.blog-content-preview em {
+  font-style: italic;
+}
+
+.blog-content-preview a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.blog-content-preview img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+.blog-content-preview iframe,
+.blog-content-preview video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 320px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.blog-content-preview pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.blog-content-preview code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+   QUILL ALIGN
+========================= */
+.blog-content-preview .ql-align-center {
+  text-align: center;
+}
+
+.blog-content-preview .ql-align-right {
+  text-align: right;
+}
+
+.blog-content-preview .ql-align-justify {
+  text-align: justify;
+}
+
+/* =========================
+   QUILL INDENT
+========================= */
+.blog-content-preview .ql-indent-1 {
+  padding-left: 2em;
+}
+
+.blog-content-preview .ql-indent-2 {
+  padding-left: 4em;
+}
+
+.blog-content-preview .ql-indent-3 {
+  padding-left: 6em;
+}
+
+.blog-content-preview .ql-indent-4 {
+  padding-left: 8em;
+}
+
+.blog-content-preview .ql-indent-5 {
+  padding-left: 10em;
+}
+
+.blog-content-preview .ql-indent-6 {
+  padding-left: 12em;
+}
+
+.blog-content-preview .ql-indent-7 {
+  padding-left: 14em;
+}
+
+.blog-content-preview .ql-indent-8 {
+  padding-left: 16em;
 }
