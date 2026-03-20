@@ -2,6 +2,57 @@
 
 import { Search } from "lucide-react";
 
+const ACTION_OPTIONS = [
+  "LOGIN",
+
+  "CREATE_BLOG",
+  "UPDATE_BLOG",
+  "DELETE_BLOG",
+
+  "CREATE_USER",
+  "UPDATE_USER",
+  "DEACTIVATE_USER",
+
+  "CREATE_WA_RESPONSE",
+  "UPDATE_WA_RESPONSE",
+  "DELETE_WA_RESPONSE",
+
+  "CREATE_COLLECTION_CATEGORY",
+  "UPDATE_COLLECTION_CATEGORY",
+  "DELETE_COLLECTION_CATEGORY",
+
+  "CREATE_COLLECTION_ITEM",
+  "UPDATE_COLLECTION_ITEM",
+  "DELETE_COLLECTION_ITEM",
+
+  "UPLOAD_COLLECTION_IMAGE",
+  "DELETE_COLLECTION_IMAGE",
+  "REORDER_COLLECTION_IMAGE",
+
+  "CREATE_COLLECTION_DETAIL_SECTION",
+  "UPDATE_COLLECTION_DETAIL_SECTION",
+  "DELETE_COLLECTION_DETAIL_SECTION",
+  "REORDER_COLLECTION_DETAIL_SECTION",
+
+  "CREATE_COLLECTION_DETAIL_ITEM",
+  "UPDATE_COLLECTION_DETAIL_ITEM",
+  "DELETE_COLLECTION_DETAIL_ITEM",
+  "REORDER_COLLECTION_DETAIL_ITEM",
+];
+
+const ENTITY_OPTIONS = [
+  "AUTH",
+  "BLOG",
+  "USER",
+  "WA_RESPONSE",
+
+  "COLLECTION_CATEGORY",
+  "COLLECTION_ITEM",
+  "COLLECTION_IMAGE",
+  "COLLECTION_DETAIL_SECTION",
+  "COLLECTION_DETAIL_ITEM",
+];
+
 export default function ActivityLogsFilters({
   search = "",
   actionFilter = "all",
@@ -46,20 +97,11 @@ export default function ActivityLogsFilters({
             className="h-[46px] rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm text-[#374151] outline-none"
           >
             <option value="all">All Actions</option>
-            <option value="LOGIN">LOGIN</option>
-            <option value="CREATE_BLOG">CREATE_BLOG</option>
-            <option value="READ_BLOG">READ_BLOG</option>
-            <option value="UPDATE_BLOG">UPDATE_BLOG</option>
-            <option value="DELETE_BLOG">DELETE_BLOG</option>
-            <option value="PUBLISH_BLOG">PUBLISH_BLOG</option>
-            <option value="CREATE_USER">CREATE_USER</option>
-            <option value="READ_USER">READ_USER</option>
-            <option value="UPDATE_USER">UPDATE_USER</option>
-            <option value="DEACTIVE_USER">DEACTIVE_USER</option>
-            <option value="CREATE_WA_RESPONSE">CREATE_WA_RESPONSE</option>
-            <option value="READ_WA_RESPONSE">READ_WA_RESPONSE</option>
-            <option value="UPDATE_WA_RESPONSE">UPDATE_WA_RESPONSE</option>
-            <option value="DELETE_WA_RESPONSE">DELETE_WA_RESPONSE</option>
+            {ACTION_OPTIONS.map((action) => (
+              <option key={action} value={action}>
+                {action}
+              </option>
+            ))}
           </select>
 
           <select
@@ -68,11 +110,11 @@ export default function ActivityLogsFilters({
             className="h-[46px] rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm text-[#374151] outline-none"
           >
             <option value="all">All Entities</option>
-            <option value="AUTH">AUTH</option>
-            <option value="BLOG">BLOG</option>
-            <option value="USER">USER</option>
-            <option value="WA_RESPONSE">WA_RESPONSE</option>
-            <option value="ACTIVITY_LOG">ACTIVITY_LOG</option>
+            {ENTITY_OPTIONS.map((entity) => (
+              <option key={entity} value={entity}>
+                {entity}
+              </option>
+            ))}
           </select>
 
           <select

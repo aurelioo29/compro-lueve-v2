@@ -4,31 +4,48 @@ import ActivityLogsEmptyState from "./ActivityLogsEmptyState";
 import ActivityLogsErrorState from "./ActivityLogsErrorState";
 
 function getActionBadgeClass(action) {
-  switch (String(action || "").toUpperCase()) {
-    case "CREATE":
-    case "CREATE_BLOG":
-    case "CREATE_USER":
-    case "CREATE_WA_RESPONSE":
-      return "bg-[#dcfce7] text-[#15803d]";
-    case "READ":
-    case "READ_BLOG":
-    case "READ_USER":
-    case "READ_ACTIVITY_LOG":
-      return "bg-[#e0f2fe] text-[#0369a1]";
-    case "UPDATE":
-    case "UPDATE_BLOG":
-    case "UPDATE_USER":
-    case "UPDATE_WA_RESPONSE":
-      return "bg-[#fef3c7] text-[#b45309]";
-    case "DELETE":
-    case "DELETE_BLOG":
-    case "DELETE_WA_RESPONSE":
-      return "bg-[#fee2e2] text-[#b91c1c]";
+  const normalized = String(action || "").toUpperCase();
+
+  switch (normalized) {
     case "LOGIN":
       return "bg-[#ede9fe] text-[#6d28d9]";
-    case "PUBLISH":
-    case "PUBLISH_BLOG":
+
+    case "CREATE_USER":
+    case "CREATE_BLOG":
+    case "CREATE_WA_RESPONSE":
+    case "CREATE_COLLECTION_CATEGORY":
+    case "CREATE_COLLECTION_ITEM":
+    case "CREATE_COLLECTION_DETAIL_SECTION":
+    case "CREATE_COLLECTION_DETAIL_ITEM":
+      return "bg-[#dcfce7] text-[#15803d]";
+
+    case "UPLOAD_COLLECTION_IMAGE":
       return "bg-[#dbeafe] text-[#1d4ed8]";
+
+    case "UPDATE_USER":
+    case "UPDATE_BLOG":
+    case "UPDATE_WA_RESPONSE":
+    case "UPDATE_COLLECTION_CATEGORY":
+    case "UPDATE_COLLECTION_ITEM":
+    case "UPDATE_COLLECTION_DETAIL_SECTION":
+    case "UPDATE_COLLECTION_DETAIL_ITEM":
+      return "bg-[#fef3c7] text-[#b45309]";
+
+    case "DEACTIVATE_USER":
+    case "DELETE_BLOG":
+    case "DELETE_WA_RESPONSE":
+    case "DELETE_COLLECTION_CATEGORY":
+    case "DELETE_COLLECTION_ITEM":
+    case "DELETE_COLLECTION_IMAGE":
+    case "DELETE_COLLECTION_DETAIL_SECTION":
+    case "DELETE_COLLECTION_DETAIL_ITEM":
+      return "bg-[#fee2e2] text-[#b91c1c]";
+
+    case "REORDER_COLLECTION_IMAGE":
+    case "REORDER_COLLECTION_DETAIL_SECTION":
+    case "REORDER_COLLECTION_DETAIL_ITEM":
+      return "bg-[#e0f2fe] text-[#0369a1]";
+
     default:
       return "bg-[#f3f4f6] text-[#374151]";
   }
@@ -37,12 +54,21 @@ function getActionBadgeClass(action) {
 function getSeverityDotClass(action) {
   const normalized = String(action || "").toUpperCase();
 
-  if (normalized.includes("DELETE")) return "bg-[#ef4444]";
-  if (normalized.includes("UPDATE")) return "bg-[#f59e0b]";
-  if (normalized.includes("CREATE") || normalized.includes("PUBLISH"))
+  if (normalized.includes("DELETE") || normalized === "DEACTIVATE_USER") {
+    return "bg-[#ef4444]";
+  }
+
+  if (normalized.includes("UPDATE")) {
+    return "bg-[#f59e0b]";
+  }
+
+  if (normalized.includes("CREATE") || normalized.includes("UPLOAD")) {
     return "bg-[#22c55e]";
-  if (normalized.includes("LOGIN") || normalized.includes("READ"))
+  }
+
+  if (normalized.includes("REORDER") || normalized === "LOGIN") {
     return "bg-[#60a5fa]";
+  }
 
   return "bg-[#9ca3af]";
 }
@@ -178,7 +204,9 @@ export default function ActivityLogsTable({
                     <td className="px-5 py-4">
                       <div className="flex items-center gap-2 text-sm text-[#6b7280]">
                         <span
-                          className={`h-2.5 w-2.5 rounded-full ${getSeverityDotClass(action)}`}
+                          className={`h-2.5 w-2.5 rounded-full ${getSeverityDotClass(
+                            action,
+                          )}`}
                         />
                         {formatDate(createdAt)}
                       </div>
@@ -209,7 +237,10 @@ export default function ActivityLogsTable({
             Previous
           </button>
 
-          <button className="rounded-lg bg-[#4f7df3] px-3 py-2 text-sm font-medium text-white">
+          <button
+            type="button"
+            className="rounded-lg bg-[#4f7df3] px-3 py-2 text-sm font-medium text-white"
+          >
             {page}
           </button>
 
