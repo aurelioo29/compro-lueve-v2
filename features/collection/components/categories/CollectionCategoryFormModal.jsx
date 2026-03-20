@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import DashboardModal from "@/app/components/ui/DashboardModal";
-import { collectionCategorySchema } from "../schemas/collection-category.schema";
-import { useCreateCollectionCategory } from "../hooks/useCreateCollectionCategory";
-import { useUpdateCollectionCategory } from "../hooks/useUpdateCollectionCategory";
-import { useCollectionCategories } from "../hooks/useCollectionCategories";
+import { collectionCategorySchema } from "../../schemas/collection-category.schema";
+import { useCreateCollectionCategory } from "../../hooks/useCreateCollectionCategory";
+import { useUpdateCollectionCategory } from "../../hooks/useUpdateCollectionCategory";
+import { useCollectionCategories } from "../../hooks/useCollectionCategories";
 
 export default function CollectionCategoryFormModal({
   open,

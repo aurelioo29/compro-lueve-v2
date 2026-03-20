@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useCollectionCategories } from "../hooks/useCollectionCategories";
-import { buildCollectionCategoryParams } from "../utils/build-collection-category-params";
+import { useCollectionCategories } from "../../hooks/useCollectionCategories";
+import { buildCollectionCategoryParams } from "../../utils/build-collection-category-params";
 import CollectionCategoriesHeader from "./CollectionCategoriesHeader";
 import CollectionCategoriesSummaryCards from "./CollectionCategoriesSummaryCards";
 import CollectionCategoriesFilters from "./CollectionCategoriesFilters";

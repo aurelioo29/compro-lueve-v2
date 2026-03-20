@@ -1,7 +1,7 @@
 "use client";
 
 import DashboardModal from "@/app/components/ui/DashboardModal";
-import { useDeleteCollectionCategory } from "../hooks/useDeleteCollectionCategory";
+import { useDeleteCollectionCategory } from "../../hooks/useDeleteCollectionCategory";
 
 export default function CollectionCategoryDeleteModal({ open, onClose, item }) {
   const { mutateAsync, isPending } = useDeleteCollectionCategory();
