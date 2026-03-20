@@ -40,8 +40,8 @@ export default function CollectionCategoriesPageContent() {
   const total = pagination?.total || items.length;
   const totalPages = pagination?.totalPages || 1;
 
-  const activeCount = items.filter((item) => item.isActive).length;
-  const inactiveCount = items.filter((item) => !item.isActive).length;
+  const rootCount = items.filter((item) => !item.parentId).length;
+  const childCount = items.filter((item) => !!item.parentId).length;
   const totalItems = items.reduce(
     (sum, item) => sum + (item?._count?.items || 0),
     0,
@@ -67,8 +67,8 @@ export default function CollectionCategoriesPageContent() {
 
       <CollectionCategoriesSummaryCards
         total={total}
-        active={activeCount}
-        inactive={inactiveCount}
+        rootCount={rootCount}
+        childCount={childCount}
         totalItems={totalItems}
       />
 

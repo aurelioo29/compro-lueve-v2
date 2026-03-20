@@ -46,8 +46,9 @@ export default function CollectionCategoriesTable({
             <tr className="text-left">
               {[
                 "Name",
-                "Slug",
+                "Parent",
                 "Items",
+                "Children",
                 "Status",
                 "Sort Order",
                 "Updated At",
@@ -67,7 +68,7 @@ export default function CollectionCategoriesTable({
             {isLoading ? (
               <tr>
                 <td
-                  colSpan={7}
+                  colSpan={8}
                   className="px-5 py-12 text-center text-sm text-[#6b7280]"
                 >
                   Loading categories...
@@ -86,15 +87,28 @@ export default function CollectionCategoriesTable({
                       <p className="mt-1 text-sm text-[#6b7280]">
                         {item.description || "No description"}
                       </p>
+                      <p className="mt-1 text-xs text-[#9ca3af]">
+                        {item.slug || "-"}
+                      </p>
                     </div>
                   </td>
 
                   <td className="px-5 py-4 text-sm text-[#4b5563]">
-                    {item.slug || "-"}
+                    {item.parent?.name ? (
+                      item.parent.name
+                    ) : (
+                      <span className="inline-flex rounded-full bg-[#f3f4f6] px-3 py-1 text-xs font-semibold text-[#6b7280]">
+                        ROOT
+                      </span>
+                    )}
                   </td>
 
                   <td className="px-5 py-4 text-sm text-[#4b5563]">
                     {item._count?.items ?? 0}
+                  </td>
+
+                  <td className="px-5 py-4 text-sm text-[#4b5563]">
+                    {item._count?.children ?? item.children?.length ?? 0}
                   </td>
 
                   <td className="px-5 py-4">

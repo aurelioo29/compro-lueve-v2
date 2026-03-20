@@ -1,6 +1,6 @@
 "use client";
 
-import { FolderKanban, CheckCircle2, Ban, Boxes } from "lucide-react";
+import { FolderKanban, FolderTree, FolderOpen, Boxes } from "lucide-react";
 
 function SummaryCard({
   title,
@@ -33,8 +33,8 @@ function SummaryCard({
 
 export default function CollectionCategoriesSummaryCards({
   total = 0,
-  active = 0,
-  inactive = 0,
+  rootCount = 0,
+  childCount = 0,
   totalItems = 0,
 }) {
   return (
@@ -49,19 +49,19 @@ export default function CollectionCategoriesSummaryCards({
       />
 
       <SummaryCard
-        title="Active Categories"
-        value={String(active)}
-        subtitle="Currently enabled"
-        icon={CheckCircle2}
-        iconBg="bg-[#dcfce7]"
-        iconColor="text-[#16a34a]"
+        title="Root Categories"
+        value={String(rootCount)}
+        subtitle="Top-level categories"
+        icon={FolderTree}
+        iconBg="bg-[#dbeafe]"
+        iconColor="text-[#2563eb]"
       />
 
       <SummaryCard
-        title="Inactive Categories"
-        value={String(inactive)}
-        subtitle="Currently disabled"
-        icon={Ban}
+        title="Child Categories"
+        value={String(childCount)}
+        subtitle="Nested under parent categories"
+        icon={FolderOpen}
         iconBg="bg-[#fee2e2]"
         iconColor="text-[#dc2626]"
       />
@@ -69,10 +69,10 @@ export default function CollectionCategoriesSummaryCards({
       <SummaryCard
         title="Total Items"
         value={String(totalItems)}
-        subtitle="Items across categories"
+        subtitle="Items across all categories"
         icon={Boxes}
-        iconBg="bg-[#dbeafe]"
-        iconColor="text-[#2563eb]"
+        iconBg="bg-[#dcfce7]"
+        iconColor="text-[#16a34a]"
       />
     </div>
   );

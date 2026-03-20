@@ -7,6 +7,7 @@ import DashboardModal from "@/app/components/ui/DashboardModal";
 import { collectionCategorySchema } from "../schemas/collection-category.schema";
 import { useCreateCollectionCategory } from "../hooks/useCreateCollectionCategory";
 import { useUpdateCollectionCategory } from "../hooks/useUpdateCollectionCategory";
+import { useCollectionCategories } from "../hooks/useCollectionCategories";
 
 export default function CollectionCategoryFormModal({
   open,
@@ -21,6 +22,15 @@ export default function CollectionCategoryFormModal({
   const { mutateAsync: updateCategory, isPending: isUpdating } =
     useUpdateCollectionCategory();
 
+  const { data: parentCategoriesData } = useCollectionCategories({
+    parentId: null,
+    page: 1,
+    limit: 100,
+    sortBy: "sortOrder",
+    order: "asc",
+  });
+
+  const parentOptions = parentCategoriesData?.data || [];
   const isPending = isCreating || isUpdating;
 
   const {
@@ -31,6 +41,7 @@ export default function CollectionCategoryFormModal({
   } = useForm({
     resolver: zodResolver(collectionCategorySchema),
     defaultValues: {
+      parentId: null,
       name: "",
       description: "",
       isActive: true,
@@ -41,6 +52,7 @@ export default function CollectionCategoryFormModal({
   useEffect(() => {
     if (open) {
       reset({
+        parentId: item?.parent?.id || item?.parentId || null,
         name: item?.name || "",
         description: item?.description || "",
         isActive: item?.isActive ?? true,
@@ -51,6 +63,7 @@ export default function CollectionCategoryFormModal({
 
   async function onSubmit(values) {
     const payload = {
+      parentId: values.parentId || null,
       name: values.name,
       description: values.description || "",
       isActive: values.isActive,
@@ -74,10 +87,34 @@ export default function CollectionCategoryFormModal({
       open={open}
       onClose={onClose}
       title={isEdit ? "Edit Category" : "Create Category"}
-      description="Manage collection category identity, order, and active status."
+      description="Manage collection category hierarchy, status, and order."
       size="md"
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+        <div>
+          <label className="mb-2 block text-sm font-medium text-[#374151]">
+            Parent Category
+          </label>
+          <select
+            {...register("parentId")}
+            className="h-[46px] w-full rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm outline-none"
+          >
+            <option value="">No Parent (Root Category)</option>
+            {parentOptions
+              .filter((parent) => parent.id !== item?.id)
+              .map((parent) => (
+                <option key={parent.id} value={parent.id}>
+                  {parent.name}
+                </option>
+              ))}
+          </select>
+          {errors.parentId && (
+            <p className="mt-2 text-sm text-red-600">
+              {errors.parentId.message}
+            </p>
+          )}
+        </div>
+
         <div>
           <label className="mb-2 block text-sm font-medium text-[#374151]">
             Name
