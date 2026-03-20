@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { usePathname, useParams, useRouter } from "next/navigation";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import {
   dashboardNavMain,
   dashboardNavBottom,
@@ -17,6 +17,30 @@ function cn(...classes) {
 }
 
 function SidebarNavSection({ items, locale, pathname, onClose, onLogout }) {
+  const [openMenus, setOpenMenus] = useState(() => {
+    const initialState = {};
+
+    items.forEach((item) => {
+      if (item.children?.length) {
+        const hasActiveChild = item.children.some((child) => {
+          const childHref = `/${locale}${child.href}`;
+          return pathname === childHref || pathname.startsWith(`${childHref}/`);
+        });
+
+        initialState[item.href] = hasActiveChild;
+      }
+    });
+
+    return initialState;
+  });
+
+  const toggleMenu = (href) => {
+    setOpenMenus((prev) => ({
+      ...prev,
+      [href]: !prev[href],
+    }));
+  };
+
   return (
     <div className="space-y-1.5">
       {items.map((item) => {
@@ -39,6 +63,100 @@ function SidebarNavSection({ items, locale, pathname, onClose, onLogout }) {
         const fullHref = `/${locale}${item.href}`;
         const isActive =
           pathname === fullHref || pathname.startsWith(`${fullHref}/`);
+
+        const hasChildren =
+          Array.isArray(item.children) && item.children.length > 0;
+        const isOpen = openMenus[item.href];
+
+        if (hasChildren) {
+          const hasActiveChild = item.children.some((child) => {
+            const childHref = `/${locale}${child.href}`;
+            return (
+              pathname === childHref || pathname.startsWith(`${childHref}/`)
+            );
+          });
+
+          return (
+            <div key={item.href} className="space-y-1">
+              <button
+                type="button"
+                onClick={() => toggleMenu(item.href)}
+                className={cn(
+                  "flex w-full items-center justify-between rounded-xl px-4 py-3 text-left text-[15px] font-medium transition",
+                  isActive || hasActiveChild
+                    ? "bg-[#4f7df3] text-white shadow-[0_12px_24px_rgba(79,125,243,0.22)]"
+                    : "text-[#374151] hover:bg-[#f3f4f6]",
+                )}
+              >
+                <div className="flex items-center gap-3">
+                  <Icon
+                    size={18}
+                    className={
+                      isActive || hasActiveChild
+                        ? "text-white"
+                        : "text-[#6b7280]"
+                    }
+                  />
+                  <span>{item.label}</span>
+                </div>
+
+                <ChevronDown
+                  size={18}
+                  className={cn(
+                    "transition-transform duration-200",
+                    isActive || hasActiveChild
+                      ? "text-white"
+                      : "text-[#6b7280]",
+                    isOpen ? "rotate-180" : "rotate-0",
+                  )}
+                />
+              </button>
+
+              <div
+                className={cn(
+                  "overflow-hidden pl-4 transition-all duration-200",
+                  isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+                )}
+              >
+                <div className="mt-1 space-y-1 border-l border-[#e5e7eb] pl-3">
+                  {item.children.map((child) => {
+                    const ChildIcon = child.icon;
+                    const childHref = `/${locale}${child.href}`;
+                    const isChildActive =
+                      pathname === childHref ||
+                      pathname.startsWith(`${childHref}/`);
+
+                    return (
+                      <Link
+                        key={child.href}
+                        href={childHref}
+                        onClick={onClose}
+                        className={cn(
+                          "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition",
+                          isChildActive
+                            ? "bg-[#eef4ff] text-[#275df5]"
+                            : "text-[#4b5563] hover:bg-[#f9fafb]",
+                        )}
+                      >
+                        {ChildIcon ? (
+                          <ChildIcon
+                            size={16}
+                            className={
+                              isChildActive
+                                ? "text-[#275df5]"
+                                : "text-[#9ca3af]"
+                            }
+                          />
+                        ) : null}
+                        <span>{child.label}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          );
+        }
 
         return (
           <Link

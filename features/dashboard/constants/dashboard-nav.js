@@ -6,6 +6,9 @@ import {
   ClipboardList,
   Settings,
   LogOut,
+  FolderKanban,
+  Shapes,
+  Package,
 } from "lucide-react";
 
 export const dashboardNavMain = [
@@ -13,6 +16,26 @@ export const dashboardNavMain = [
     label: "Dashboard",
     href: "/dashboard",
     icon: LayoutDashboard,
+  },
+  {
+    label: "Collection",
+    href: "/dashboard/collections",
+    icon: FolderKanban,
+    permissions: ["collection.read"],
+    children: [
+      {
+        label: "Categories",
+        href: "/dashboard/collections/categories",
+        icon: Shapes,
+        permissions: ["collection.read"],
+      },
+      {
+        label: "Items",
+        href: "/dashboard/collections/items",
+        icon: Package,
+        permissions: ["collection.read"],
+      },
+    ],
   },
   {
     label: "Users",
