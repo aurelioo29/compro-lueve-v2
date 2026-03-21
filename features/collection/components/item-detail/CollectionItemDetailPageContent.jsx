@@ -5,11 +5,27 @@ import { ChevronLeft } from "lucide-react";
 import { useCollectionItemDetail } from "../../hooks/useCollectionItemDetail";
 import CollectionItemInfoCard from "./CollectionItemInfoCard";
 import CollectionItemImagesCard from "./CollectionItemImagesCard";
+import CollectionItemDetailSectionsCard from "./CollectionItemDetailSectionsCard";
 
 export default function CollectionItemDetailPageContent({ id }) {
   const { data, isLoading, isError, error } = useCollectionItemDetail(id);
 
   const item = data?.data || null;
+
+  if (!id) {
+    return (
+      <section className="space-y-6">
+        <div className="rounded-[24px] bg-white p-10 text-center shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
+          <h3 className="text-lg font-semibold text-[#111827]">
+            Invalid item ID
+          </h3>
+          <p className="mt-2 text-sm text-[#6b7280]">
+            The page did not receive a valid collection item ID.
+          </p>
+        </div>
+      </section>
+    );
+  }
 
   if (isLoading) {
     return (
@@ -71,14 +87,15 @@ export default function CollectionItemDetailPageContent({ id }) {
             {item.name || "Item Detail"}
           </h1>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-[#6b7280]">
-            Manage the item information and image assets for this collection
-            item.
+            Manage the item information, image assets, and detail sections for
+            this collection item.
           </p>
         </div>
       </div>
 
       <CollectionItemInfoCard item={item} />
       <CollectionItemImagesCard item={item} />
+      <CollectionItemDetailSectionsCard item={item} />
     </section>
   );
 }
