@@ -1,15 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import DashboardModal from "@/app/components/ui/DashboardModal";
 import { collectionImageSchema } from "../../schemas/collection-image.schema";
 import { useUploadCollectionImage } from "../../hooks/useUploadCollectionImage";
 
-export default function CollectionImageUploadModal({ open, onClose, itemId }) {
+export default function CollectionImageUploadModal({
+  open,
+  onClose,
+  itemId,
+  item = null,
+}) {
   const { mutateAsync, isPending } = useUploadCollectionImage();
   const [preview, setPreview] = useState(null);
+  const [submitError, setSubmitError] = useState("");
+
+  const hasPrimaryImage = useMemo(() => {
+    return (item?.images || []).some((img) => img.imageType === "PRIMARY");
+  }, [item?.images]);
 
   const {
     register,
@@ -17,11 +27,12 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
     handleSubmit,
     reset,
     watch,
+    setValue,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(collectionImageSchema),
     defaultValues: {
-      imageType: "GALLERY",
+      imageType: hasPrimaryImage ? "GALLERY" : "PRIMARY",
       altText: "",
       sortOrder: 0,
       image: undefined,
@@ -29,6 +40,7 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
   });
 
   const watchedFile = watch("image");
+  const watchedImageType = watch("imageType");
 
   useEffect(() => {
     if (!watchedFile || !(watchedFile instanceof File)) {
@@ -43,18 +55,32 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
   }, [watchedFile]);
 
   useEffect(() => {
-    if (!open) {
+    if (open) {
       reset({
-        imageType: "GALLERY",
+        imageType: hasPrimaryImage ? "GALLERY" : "PRIMARY",
         altText: "",
         sortOrder: 0,
         image: undefined,
       });
       setPreview(null);
+      setSubmitError("");
     }
-  }, [open, reset]);
+  }, [open, reset, hasPrimaryImage]);
+
+  useEffect(() => {
+    if (hasPrimaryImage && watchedImageType === "PRIMARY") {
+      setValue("imageType", "GALLERY");
+    }
+  }, [hasPrimaryImage, watchedImageType, setValue]);
 
   async function onSubmit(values) {
+    setSubmitError("");
+
+    if (hasPrimaryImage && values.imageType === "PRIMARY") {
+      setSubmitError("Only one PRIMARY image is allowed for this item.");
+      return;
+    }
+
     try {
       await mutateAsync({
         itemId,
@@ -68,6 +94,11 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
 
       onClose();
     } catch (error) {
+      const message =
+        error?.response?.data?.message ||
+        "Failed to upload image. Please try again.";
+
+      setSubmitError(message);
       console.error("UPLOAD ERROR:", error?.response?.data || error);
     }
   }
@@ -85,14 +116,25 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
           <label className="mb-2 block text-sm font-medium text-[#374151]">
             Image Type
           </label>
+
           <select
             {...register("imageType")}
             className="h-[46px] w-full rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm outline-none"
           >
-            <option value="PRIMARY">PRIMARY</option>
+            <option value="PRIMARY" disabled={hasPrimaryImage}>
+              PRIMARY
+            </option>
             <option value="GALLERY">GALLERY</option>
             <option value="BOTTOM">BOTTOM</option>
           </select>
+
+          {hasPrimaryImage && (
+            <p className="mt-2 text-sm text-[#b45309]">
+              Only one PRIMARY image is allowed. This item already has a PRIMARY
+              image.
+            </p>
+          )}
+
           {errors.imageType && (
             <p className="mt-2 text-sm text-red-600">
               {errors.imageType.message}
@@ -166,6 +208,12 @@ export default function CollectionImageUploadModal({ open, onClose, itemId }) {
               alt="Preview"
               className="h-64 w-full rounded-xl object-cover"
             />
+          </div>
+        )}
+
+        {submitError && (
+          <div className="rounded-xl border border-[#fee2e2] bg-[#fff5f5] px-4 py-3 text-sm text-[#b91c1c]">
+            {submitError}
           </div>
         )}
 

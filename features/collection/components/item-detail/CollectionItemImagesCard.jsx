@@ -165,7 +165,7 @@ function ImageSection({
   title,
   groupKey,
   images = [],
-  itemId,
+  description = "",
   isReordering = false,
   sensors,
   onDeleteClick = () => {},
@@ -175,14 +175,20 @@ function ImageSection({
 }) {
   return (
     <div className="space-y-4">
-      <div className="flex items-center gap-2">
-        <h4 className="text-sm font-semibold uppercase tracking-[0.14em] text-[#9ca3af]">
-          {title}
-        </h4>
+      <div>
+        <div className="flex items-center gap-2">
+          <h4 className="text-sm font-semibold uppercase tracking-[0.14em] text-[#9ca3af]">
+            {title}
+          </h4>
 
-        <span className="rounded-full bg-[#f3f4f6] px-2.5 py-1 text-xs font-medium text-[#6b7280]">
-          {images.length}
-        </span>
+          <span className="rounded-full bg-[#f3f4f6] px-2.5 py-1 text-xs font-medium text-[#6b7280]">
+            {images.length}
+          </span>
+        </div>
+
+        {description ? (
+          <p className="mt-2 text-sm text-[#6b7280]">{description}</p>
+        ) : null}
       </div>
 
       {images.length > 0 ? (
@@ -327,8 +333,8 @@ export default function CollectionItemImagesCard({
           <ImageSection
             title="PRIMARY"
             groupKey="primary"
+            description="Only one PRIMARY image is allowed."
             images={grouped.primary}
-            itemId={item?.id}
             sensors={sensors}
             isReordering={isReordering}
             onDeleteClick={(image) => {
@@ -343,8 +349,8 @@ export default function CollectionItemImagesCard({
           <ImageSection
             title="GALLERY"
             groupKey="gallery"
+            description="You can add multiple gallery images."
             images={grouped.gallery}
-            itemId={item?.id}
             sensors={sensors}
             isReordering={isReordering}
             onDeleteClick={(image) => {
@@ -359,8 +365,8 @@ export default function CollectionItemImagesCard({
           <ImageSection
             title="BOTTOM"
             groupKey="bottom"
+            description="You can add multiple bottom images."
             images={grouped.bottom}
-            itemId={item?.id}
             sensors={sensors}
             isReordering={isReordering}
             onDeleteClick={(image) => {
@@ -378,6 +384,7 @@ export default function CollectionItemImagesCard({
         open={uploadOpen}
         onClose={() => setUploadOpen(false)}
         itemId={item?.id}
+        item={item}
       />
 
       <CollectionImageDeleteModal
