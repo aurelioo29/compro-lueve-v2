@@ -13,55 +13,56 @@ function getStatusBadgeClass(status) {
   }
 }
 
+function InfoRow({ label, value }) {
+  return (
+    <div className="rounded-xl border border-[#eef0f4] bg-[#fafafa] px-4 py-3">
+      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#9ca3af]">
+        {label}
+      </p>
+      <p className="mt-2 break-words text-sm leading-6 text-[#374151]">
+        {value || "-"}
+      </p>
+    </div>
+  );
+}
+
 export default function CollectionItemInfoCard({ item }) {
   if (!item) return null;
 
+  const categoryLabel = item.category?.parent?.name
+    ? `${item.category.parent.name} / ${item.category.name}`
+    : item.category?.name || "-";
+
   return (
     <div className="rounded-[24px] bg-white p-6 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+      <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#9ca3af]">
-            Collection Item
+            Item Overview
           </p>
-          <h2 className="mt-2 text-[28px] font-bold tracking-[-0.03em] text-[#111827]">
+          <h3 className="mt-2 text-[22px] font-bold tracking-[-0.02em] text-[#111827]">
             {item.name || "-"}
-          </h2>
-          <p className="mt-2 text-sm text-[#6b7280]">{item.slug || "-"}</p>
-
-          {item.meaning && (
-            <p className="mt-4 text-sm font-medium text-[#374151]">
-              {item.meaning}
-            </p>
-          )}
-
-          {item.description && (
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-[#6b7280]">
-              {item.description}
-            </p>
-          )}
+          </h3>
         </div>
 
-        <div className="flex flex-wrap gap-3">
-          <span
-            className={`inline-flex rounded-full px-3 py-1.5 text-xs font-semibold ${getStatusBadgeClass(
-              item.status,
-            )}`}
-          >
-            {item.status || "-"}
-          </span>
+        <span
+          className={`inline-flex rounded-full px-3 py-1.5 text-xs font-semibold ${getStatusBadgeClass(
+            item.status,
+          )}`}
+        >
+          {item.status || "-"}
+        </span>
+      </div>
 
-          <span className="inline-flex rounded-full bg-[#f3f4f6] px-3 py-1.5 text-xs font-semibold text-[#374151]">
-            Order: {item.sortOrder ?? 0}
-          </span>
-
-          {item.category?.name && (
-            <span className="inline-flex rounded-full bg-[#eff6ff] px-3 py-1.5 text-xs font-semibold text-[#1d4ed8]">
-              {item.category?.parent?.name
-                ? `${item.category.parent.name} / ${item.category.name}`
-                : item.category.name}
-            </span>
-          )}
-        </div>
+      <div className="mt-5 grid gap-3">
+        <InfoRow label="Slug" value={item.slug} />
+        <InfoRow label="Category" value={categoryLabel} />
+        <InfoRow label="Meaning" value={item.meaning || "No meaning"} />
+        <InfoRow
+          label="Description"
+          value={item.description || "No description"}
+        />
+        <InfoRow label="Sort Order" value={String(item.sortOrder ?? 0)} />
       </div>
     </div>
   );
