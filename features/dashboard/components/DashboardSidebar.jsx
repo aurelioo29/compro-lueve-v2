@@ -1,183 +1,95 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
-import { usePathname, useParams, useRouter } from "next/navigation";
-import { X, ChevronDown } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { X, ChevronRight, LogOut } from "lucide-react";
+import { toast } from "sonner";
+
+import { useAuthStore } from "@/features/auth/store/auth-store";
+import { filterNavByPermissions } from "@/features/auth/utils/permissions";
+import axiosInstance from "@/lib/axios";
 import {
   dashboardNavMain,
   dashboardNavBottom,
 } from "../constants/dashboard-nav";
-import { useAuthStore } from "@/features/auth/store/auth-store";
-import { filterNavByPermissions } from "@/features/auth/utils/permissions";
-import Image from "next/image";
 
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
+function isRouteActive(pathname, href) {
+  if (!pathname || !href) return false;
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-function SidebarNavSection({ items, locale, pathname, onClose, onLogout }) {
-  const [openMenus, setOpenMenus] = useState(() => {
-    const initialState = {};
+function buildLocalizedHref(locale, href) {
+  if (!href) return "#";
+  return `/${locale}${href}`;
+}
 
-    items.forEach((item) => {
-      if (item.children?.length) {
-        const hasActiveChild = item.children.some((child) => {
-          const childHref = `/${locale}${child.href}`;
-          return pathname === childHref || pathname.startsWith(`${childHref}/`);
-        });
+async function logoutApi(refreshToken) {
+  return axiosInstance.post("/auth/logout", { refreshToken });
+}
 
-        initialState[item.href] = hasActiveChild;
-      }
-    });
+function NavItem({
+  item,
+  locale,
+  pathname,
+  onNavigate,
+  onLogoutClick,
+  depth = 0,
+}) {
+  const Icon = item.icon || ChevronRight;
+  const localizedHref = item.isLogout
+    ? "#logout"
+    : buildLocalizedHref(locale, item.href);
 
-    return initialState;
-  });
+  const active = !item.isLogout && isRouteActive(pathname, localizedHref);
+  const hasChildren = Array.isArray(item.children) && item.children.length > 0;
 
-  const toggleMenu = (href) => {
-    setOpenMenus((prev) => ({
-      ...prev,
-      [href]: !prev[href],
-    }));
-  };
+  if (item.isLogout) {
+    return (
+      <button
+        type="button"
+        onClick={onLogoutClick}
+        className="flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-sm font-medium text-[#9f1239] transition hover:bg-[#fff1f4]"
+      >
+        <Icon size={18} />
+        <span>{item.label}</span>
+      </button>
+    );
+  }
 
   return (
-    <div className="space-y-1.5">
-      {items.map((item) => {
-        const Icon = item.icon;
+    <div className="space-y-2">
+      <Link
+        href={localizedHref}
+        onClick={onNavigate}
+        className={[
+          "flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-medium transition",
+          depth > 0 ? "ml-1" : "",
+          active
+            ? "bg-[#7f1d1d] text-white shadow-[0_10px_30px_rgba(127,29,29,0.12)]"
+            : "text-[#4f4a45] hover:bg-[#f8f1ec] hover:text-[#7a1f1f]",
+        ].join(" ")}
+      >
+        <Icon size={18} />
+        <span>{item.label}</span>
+      </Link>
 
-        if (item.isLogout) {
-          return (
-            <button
-              key={item.label}
-              type="button"
-              onClick={onLogout}
-              className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-[15px] font-medium text-[#374151] transition hover:bg-[#f3f4f6]"
-            >
-              <Icon size={18} className="text-[#6b7280]" />
-              <span>{item.label}</span>
-            </button>
-          );
-        }
-
-        const fullHref = `/${locale}${item.href}`;
-        const isActive =
-          pathname === fullHref || pathname.startsWith(`${fullHref}/`);
-
-        const hasChildren =
-          Array.isArray(item.children) && item.children.length > 0;
-        const isOpen = openMenus[item.href];
-
-        if (hasChildren) {
-          const hasActiveChild = item.children.some((child) => {
-            const childHref = `/${locale}${child.href}`;
-            return (
-              pathname === childHref || pathname.startsWith(`${childHref}/`)
-            );
-          });
-
-          return (
-            <div key={item.href} className="space-y-1">
-              <button
-                type="button"
-                onClick={() => toggleMenu(item.href)}
-                className={cn(
-                  "flex w-full items-center justify-between rounded-xl px-4 py-3 text-left text-[15px] font-medium transition",
-                  isActive || hasActiveChild
-                    ? "bg-[#4f7df3] text-white shadow-[0_12px_24px_rgba(79,125,243,0.22)]"
-                    : "text-[#374151] hover:bg-[#f3f4f6]",
-                )}
-              >
-                <div className="flex items-center gap-3">
-                  <Icon
-                    size={18}
-                    className={
-                      isActive || hasActiveChild
-                        ? "text-white"
-                        : "text-[#6b7280]"
-                    }
-                  />
-                  <span>{item.label}</span>
-                </div>
-
-                <ChevronDown
-                  size={18}
-                  className={cn(
-                    "transition-transform duration-200",
-                    isActive || hasActiveChild
-                      ? "text-white"
-                      : "text-[#6b7280]",
-                    isOpen ? "rotate-180" : "rotate-0",
-                  )}
-                />
-              </button>
-
-              <div
-                className={cn(
-                  "overflow-hidden pl-4 transition-all duration-200",
-                  isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
-                )}
-              >
-                <div className="mt-1 space-y-1 border-l border-[#e5e7eb] pl-3">
-                  {item.children.map((child) => {
-                    const ChildIcon = child.icon;
-                    const childHref = `/${locale}${child.href}`;
-                    const isChildActive =
-                      pathname === childHref ||
-                      pathname.startsWith(`${childHref}/`);
-
-                    return (
-                      <Link
-                        key={child.href}
-                        href={childHref}
-                        onClick={onClose}
-                        className={cn(
-                          "flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition",
-                          isChildActive
-                            ? "bg-[#eef4ff] text-[#275df5]"
-                            : "text-[#4b5563] hover:bg-[#f9fafb]",
-                        )}
-                      >
-                        {ChildIcon ? (
-                          <ChildIcon
-                            size={16}
-                            className={
-                              isChildActive
-                                ? "text-[#275df5]"
-                                : "text-[#9ca3af]"
-                            }
-                          />
-                        ) : null}
-                        <span>{child.label}</span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          );
-        }
-
-        return (
-          <Link
-            key={item.href}
-            href={fullHref}
-            onClick={onClose}
-            className={cn(
-              "flex items-center gap-3 rounded-xl px-4 py-3 text-[15px] font-medium transition",
-              isActive
-                ? "bg-[#4f7df3] text-white shadow-[0_12px_24px_rgba(79,125,243,0.22)]"
-                : "text-[#374151] hover:bg-[#f3f4f6]",
-            )}
-          >
-            <Icon
-              size={18}
-              className={isActive ? "text-white" : "text-[#6b7280]"}
+      {hasChildren && (
+        <div className="ml-4 space-y-1 border-l border-[#eadfd7] pl-3">
+          {item.children.map((child) => (
+            <NavItem
+              key={child.label}
+              item={child}
+              locale={locale}
+              pathname={pathname}
+              onNavigate={onNavigate}
+              onLogoutClick={onLogoutClick}
+              depth={depth + 1}
             />
-            <span>{item.label}</span>
-          </Link>
-        );
-      })}
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -186,135 +98,187 @@ export default function DashboardSidebar({
   mobileOpen = false,
   onClose = () => {},
 }) {
+  const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
-  const router = useRouter();
   const locale = params?.locale || "en";
 
   const user = useAuthStore((state) => state.user);
+  const refreshToken = useAuthStore((state) => state.refreshToken);
   const logout = useAuthStore((state) => state.logout);
 
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
 
   const userPermissions = user?.permissions || [];
 
-  const filteredMainNav = useMemo(() => {
+  const visibleMainNav = useMemo(() => {
     return filterNavByPermissions(dashboardNavMain, userPermissions);
   }, [userPermissions]);
 
-  const filteredBottomNav = useMemo(() => {
+  const visibleBottomNav = useMemo(() => {
     return filterNavByPermissions(dashboardNavBottom, userPermissions);
   }, [userPermissions]);
 
-  const handleLogout = () => {
+  const handleNavigate = () => {
+    if (mobileOpen) onClose();
+  };
+
+  const handleOpenLogoutModal = () => {
     setShowLogoutConfirm(true);
   };
 
-  const confirmLogout = () => {
+  const handleCancelLogout = () => {
     setShowLogoutConfirm(false);
-    logout();
-    router.replace(`/${locale}/login`);
   };
 
-  const cancelLogout = () => {
-    setShowLogoutConfirm(false);
+  const handleConfirmLogout = async () => {
+    try {
+      setIsLoggingOut(true);
+
+      if (refreshToken) {
+        await logoutApi(refreshToken);
+      }
+
+      toast.success("Logout berhasil");
+    } catch (error) {
+      console.error("Logout API error:", error);
+      toast.error("Logout backend gagal, tapi sesi lokal tetap dibersihkan");
+    } finally {
+      logout();
+      setShowLogoutConfirm(false);
+      setIsLoggingOut(false);
+      onClose?.();
+      router.replace(`/${locale}/login`);
+    }
   };
 
   return (
     <>
       {mobileOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black/30 lg:hidden"
+        <button
+          type="button"
+          aria-label="Close sidebar overlay"
+          className="fixed inset-0 z-30 bg-black/40 lg:hidden"
           onClick={onClose}
         />
       )}
 
       <aside
-        className={cn(
-          "fixed left-0 top-0 z-50 h-screen w-[270px] border-r border-[#eef0f4] bg-white transition-transform duration-300",
+        className={[
+          "fixed left-0 top-0 z-40 flex h-screen w-[280px] flex-col border bg-white transition-transform duration-300",
           mobileOpen ? "translate-x-0" : "-translate-x-full",
           "lg:translate-x-0",
-        )}
+        ].join(" ")}
       >
-        <div className="flex h-full flex-col">
-          <div className="relative flex items-center justify-center px-6 py-3">
-            <Link
-              href={`/${locale}/dashboard`}
-              className="flex items-center justify-center"
-            >
+        <div className="relative flex h-[84px] items-center justify-center border-b border-[#e5e7eb] px-4 mt-2">
+          <Link
+            href={`/${locale}/dashboard`}
+            onClick={handleNavigate}
+            className="group relative z-10 flex min-w-0 items-center"
+          >
+            <div className="flex flex-col">
               <Image
                 src="/images/logo/lueve-logo.svg"
                 alt="LUEVE"
                 width={90}
                 height={28}
-                className="h-16 w-auto object-contain"
+                className="h-24 w-auto"
                 priority
               />
-            </Link>
+            </div>
+          </Link>
 
-            <button
-              type="button"
-              onClick={onClose}
-              className="absolute right-6 rounded-lg p-2 text-[#6b7280] hover:bg-[#f3f4f6] lg:hidden"
-              aria-label="Close sidebar"
-            >
-              <X size={18} />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="relative z-10 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#e8ddd5] bg-white/80 text-[#6b5f58] transition hover:bg-[#f7f1ec] lg:hidden"
+            aria-label="Close sidebar"
+          >
+            <X size={18} />
+          </button>
+        </div>
 
-          <div className="flex-1 overflow-y-auto px-4 pb-6">
-            <SidebarNavSection
-              items={filteredMainNav}
-              locale={locale}
-              pathname={pathname}
-              onClose={onClose}
-              onLogout={handleLogout}
-            />
-          </div>
+        <div className="flex-1 overflow-y-auto px-4 py-5">
+          <div>
+            <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.32em] text-[#a78b7a]">
+              Main Menu
+            </p>
 
-          <div className="border-t border-[#eef0f4] px-4 py-4">
-            <SidebarNavSection
-              items={filteredBottomNav}
-              locale={locale}
-              pathname={pathname}
-              onClose={onClose}
-              onLogout={handleLogout}
-            />
+            <nav className="space-y-2">
+              {visibleMainNav.map((item) => (
+                <NavItem
+                  key={item.label}
+                  item={item}
+                  locale={locale}
+                  pathname={pathname}
+                  onNavigate={handleNavigate}
+                  onLogoutClick={handleOpenLogoutModal}
+                />
+              ))}
+            </nav>
           </div>
+        </div>
+
+        <div className="border-t border-[#eee6df] px-4 py-4">
+          <p className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[0.32em] text-[#a78b7a]">
+            Preferences
+          </p>
+
+          <nav className="space-y-2">
+            {visibleBottomNav.map((item) => (
+              <NavItem
+                key={item.label}
+                item={item}
+                locale={locale}
+                pathname={pathname}
+                onNavigate={handleNavigate}
+                onLogoutClick={handleOpenLogoutModal}
+              />
+            ))}
+          </nav>
         </div>
       </aside>
 
       {showLogoutConfirm && (
-        <div
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40 px-4"
-          onClick={cancelLogout}
-        >
-          <div
-            className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-[0_24px_60px_rgba(0,0,0,0.18)]"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h2 className="text-lg font-semibold text-[#111827]">
-              Confirm logout
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-[#6b7280]">
-              Are you sure you want to log out from your account?
-            </p>
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 px-4">
+          <div className="w-full max-w-md rounded-[28px] border border-[#ead8d1] bg-white p-6 shadow-[0_20px_60px_rgba(0,0,0,0.18)] sm:p-7">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#f3d7d7]">
+              <LogOut className="h-6 w-6 text-[#b42318]" />
+            </div>
 
-            <div className="mt-6 flex justify-end gap-3">
+            <div className="mt-5 text-center">
+              <p className="text-[11px] font-medium uppercase tracking-[0.3em] text-[#b07a7a]">
+                Confirm Action
+              </p>
+
+              <h3 className="mt-3 text-2xl font-semibold text-[#111827]">
+                Logout from dashboard?
+              </h3>
+
+              <p className="mx-auto mt-3 max-w-[340px] text-sm leading-6 text-[#6b7280]">
+                You will be signed out from this session and redirected to the
+                login page.
+              </p>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
               <button
                 type="button"
-                onClick={cancelLogout}
-                className="rounded-xl border border-[#e5e7eb] px-4 py-2.5 text-sm font-medium text-[#374151] transition hover:bg-[#f9fafb]"
+                onClick={handleCancelLogout}
+                disabled={isLoggingOut}
+                className="inline-flex items-center justify-center rounded-2xl border border-[#e5e7eb] bg-white px-4 py-3 text-sm font-semibold text-[#374151] transition hover:bg-[#f9fafb] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 Cancel
               </button>
 
               <button
                 type="button"
-                onClick={confirmLogout}
-                className="rounded-xl bg-[#ef4444] px-4 py-2.5 text-sm font-medium text-white transition hover:bg-[#dc2626]"
+                onClick={handleConfirmLogout}
+                disabled={isLoggingOut}
+                className="inline-flex items-center justify-center rounded-2xl bg-[#b42318] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#991b1b] disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Logout
+                {isLoggingOut ? "Logging out..." : "Yes, Logout"}
               </button>
             </div>
           </div>

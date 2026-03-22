@@ -19,7 +19,6 @@ export const dashboardNavMain = [
   },
   {
     label: "Collection",
-    href: "/dashboard/collections",
     icon: FolderKanban,
     permissions: ["collection.read"],
     children: [

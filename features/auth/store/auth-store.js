@@ -11,6 +11,7 @@ export const useAuthStore = create(
       refreshToken: null,
       isAuthenticated: false,
       hasHydrated: false,
+      isBootstrapping: false,
 
       setAuth: ({ user, accessToken, refreshToken }) =>
         set({
@@ -20,12 +21,24 @@ export const useAuthStore = create(
           isAuthenticated: true,
         }),
 
+      setUser: (user) =>
+        set({
+          user,
+          isAuthenticated: true,
+        }),
+
+      setBootstrapping: (value) =>
+        set({
+          isBootstrapping: value,
+        }),
+
       logout: () =>
         set({
           user: null,
           accessToken: null,
           refreshToken: null,
           isAuthenticated: false,
+          isBootstrapping: false,
         }),
 
       setHasHydrated: (value) => set({ hasHydrated: value }),
