@@ -1,57 +1,12 @@
 "use client";
 
 import { Search } from "lucide-react";
-
-const ACTION_OPTIONS = [
-  "LOGIN",
-
-  "CREATE_BLOG",
-  "UPDATE_BLOG",
-  "DELETE_BLOG",
-
-  "CREATE_USER",
-  "UPDATE_USER",
-  "DEACTIVATE_USER",
-
-  "CREATE_WA_RESPONSE",
-  "UPDATE_WA_RESPONSE",
-  "DELETE_WA_RESPONSE",
-
-  "CREATE_COLLECTION_CATEGORY",
-  "UPDATE_COLLECTION_CATEGORY",
-  "DELETE_COLLECTION_CATEGORY",
-
-  "CREATE_COLLECTION_ITEM",
-  "UPDATE_COLLECTION_ITEM",
-  "DELETE_COLLECTION_ITEM",
-
-  "UPLOAD_COLLECTION_IMAGE",
-  "DELETE_COLLECTION_IMAGE",
-  "REORDER_COLLECTION_IMAGE",
-
-  "CREATE_COLLECTION_DETAIL_SECTION",
-  "UPDATE_COLLECTION_DETAIL_SECTION",
-  "DELETE_COLLECTION_DETAIL_SECTION",
-  "REORDER_COLLECTION_DETAIL_SECTION",
-
-  "CREATE_COLLECTION_DETAIL_ITEM",
-  "UPDATE_COLLECTION_DETAIL_ITEM",
-  "DELETE_COLLECTION_DETAIL_ITEM",
-  "REORDER_COLLECTION_DETAIL_ITEM",
-];
-
-const ENTITY_OPTIONS = [
-  "AUTH",
-  "BLOG",
-  "USER",
-  "WA_RESPONSE",
-
-  "COLLECTION_CATEGORY",
-  "COLLECTION_ITEM",
-  "COLLECTION_IMAGE",
-  "COLLECTION_DETAIL_SECTION",
-  "COLLECTION_DETAIL_ITEM",
-];
+import {
+  ACTIVITY_ACTION_LABELS,
+  ACTIVITY_ACTION_OPTIONS,
+  ACTIVITY_ENTITY_LABELS,
+  ACTIVITY_ENTITY_OPTIONS,
+} from "../constants/activity-log.constants";
 
 export default function ActivityLogsFilters({
   search = "",
@@ -97,9 +52,9 @@ export default function ActivityLogsFilters({
             className="h-[46px] rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm text-[#374151] outline-none"
           >
             <option value="all">All Actions</option>
-            {ACTION_OPTIONS.map((action) => (
+            {ACTIVITY_ACTION_OPTIONS.map((action) => (
               <option key={action} value={action}>
-                {action}
+                {ACTIVITY_ACTION_LABELS[action] || action}
               </option>
             ))}
           </select>
@@ -110,9 +65,9 @@ export default function ActivityLogsFilters({
             className="h-[46px] rounded-xl border border-[#e5e7eb] bg-[#f9fafb] px-4 text-sm text-[#374151] outline-none"
           >
             <option value="all">All Entities</option>
-            {ENTITY_OPTIONS.map((entity) => (
+            {ACTIVITY_ENTITY_OPTIONS.map((entity) => (
               <option key={entity} value={entity}>
-                {entity}
+                {ACTIVITY_ENTITY_LABELS[entity] || entity}
               </option>
             ))}
           </select>
