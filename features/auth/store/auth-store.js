@@ -41,7 +41,10 @@ export const useAuthStore = create(
           isBootstrapping: false,
         }),
 
-      setHasHydrated: (value) => set({ hasHydrated: value }),
+      setHasHydrated: (value) =>
+        set({
+          hasHydrated: value,
+        }),
     }),
     {
       name: "auth-storage",
