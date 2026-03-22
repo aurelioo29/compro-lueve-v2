@@ -116,6 +116,7 @@ export default function LoginForm() {
             <input
               type="checkbox"
               className="h-4 w-4 rounded border-[#ccb7b7] text-[#7a1f1f] focus:ring-[#7a1f1f]/20"
+              {...register("rememberMe")}
             />
             Remember me
           </label>
