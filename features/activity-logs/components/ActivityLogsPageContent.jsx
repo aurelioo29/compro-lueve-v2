@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { toast } from "sonner";
 import { useActivityLogs } from "@/features/activity-logs/hooks/useActivityLogs";
+import { useExportActivityLogs } from "@/features/activity-logs/hooks/useExportActivityLogs";
 import { buildActivityLogParams } from "@/features/activity-logs/utils/build-activity-log-params";
 import ActivityLogsHeader from "./ActivityLogsHeader";
 import ActivityLogsSummaryCards from "./ActivityLogsSummaryCards";
@@ -21,52 +23,35 @@ export default function ActivityLogsPageContent() {
     return buildActivityLogParams({
       page,
       limit,
+      search,
       action: actionFilter,
       entityType: entityFilter,
       sortBy,
       order,
     });
-  }, [page, limit, actionFilter, entityFilter, sortBy, order]);
+  }, [page, limit, search, actionFilter, entityFilter, sortBy, order]);
+
+  const exportParams = useMemo(() => {
+    return buildActivityLogParams({
+      search,
+      action: actionFilter,
+      entityType: entityFilter,
+      sortBy,
+      order,
+    });
+  }, [search, actionFilter, entityFilter, sortBy, order]);
 
   const { data, isLoading, isError, error, refetch, isFetching } =
     useActivityLogs(params);
+
+  const exportMutation = useExportActivityLogs();
 
   const rawLogs = data?.data || [];
   const pagination = data?.pagination || {};
   const totalLogs = pagination?.total || rawLogs.length;
   const totalPages = pagination?.totalPages || 1;
 
-  const logs = useMemo(() => {
-    if (!search.trim()) return rawLogs;
-
-    const keyword = search.toLowerCase();
-
-    return rawLogs.filter((log) => {
-      const actorName =
-        log?.actor?.name ||
-        log?.user?.name ||
-        log?.causer?.name ||
-        log?.createdBy?.name ||
-        "";
-
-      const actorEmail =
-        log?.actor?.email ||
-        log?.user?.email ||
-        log?.causer?.email ||
-        log?.createdBy?.email ||
-        "";
-
-      const description = log?.description || "";
-      const ipAddress = log?.ipAddress || log?.ip || "";
-
-      return (
-        actorName.toLowerCase().includes(keyword) ||
-        actorEmail.toLowerCase().includes(keyword) ||
-        description.toLowerCase().includes(keyword) ||
-        ipAddress.toLowerCase().includes(keyword)
-      );
-    });
-  }, [rawLogs, search]);
+  const logs = rawLogs;
 
   const loginLogsCount = rawLogs.filter((log) =>
     String(log?.action || "")
@@ -89,9 +74,33 @@ export default function ActivityLogsPageContent() {
     setPage(1);
   };
 
+  const handleExport = async (format) => {
+    try {
+      await exportMutation.mutateAsync({
+        ...exportParams,
+        format,
+      });
+
+      toast.success(
+        format === "xlsx"
+          ? "Activity logs exported as Excel successfully."
+          : "Activity logs exported as CSV successfully.",
+      );
+    } catch (err) {
+      toast.error(
+        err?.response?.data?.message || "Failed to export activity logs.",
+      );
+    }
+  };
+
   return (
     <section className="space-y-6">
-      <ActivityLogsHeader onRefresh={refetch} isRefreshing={isFetching} />
+      <ActivityLogsHeader
+        onRefresh={refetch}
+        isRefreshing={isFetching}
+        onExport={handleExport}
+        isExporting={exportMutation.isPending}
+      />
 
       <ActivityLogsSummaryCards
         totalLogs={totalLogs}
@@ -107,7 +116,10 @@ export default function ActivityLogsPageContent() {
         entityFilter={entityFilter}
         sortBy={sortBy}
         order={order}
-        onSearchChange={setSearch}
+        onSearchChange={(value) => {
+          setSearch(value);
+          setPage(1);
+        }}
         onActionChange={(value) => {
           setActionFilter(value);
           setPage(1);
@@ -136,7 +148,9 @@ export default function ActivityLogsPageContent() {
         isError={isError}
         errorMessage={error?.response?.data?.message}
         onPrevPage={() => setPage((prev) => Math.max(prev - 1, 1))}
-        onNextPage={() => setPage((prev) => prev + 1)}
+        onNextPage={() =>
+          setPage((prev) => (prev < totalPages ? prev + 1 : prev))
+        }
       />
     </section>
   );
