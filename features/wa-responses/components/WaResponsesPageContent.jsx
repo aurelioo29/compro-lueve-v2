@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { toast } from "sonner";
 import { useWaResponses } from "@/features/wa-responses/hooks/useWaResponses";
+import { useExportWaResponses } from "@/features/wa-responses/hooks/useExportWaResponses";
 import { buildWaResponseParams } from "@/features/wa-responses/utils/build-wa-response-params";
 import WaResponsesHeader from "./WaResponsesHeader";
 import WaResponsesSummaryCards from "./WaResponsesSummaryCards";
@@ -36,8 +38,19 @@ export default function WaResponsesPageContent() {
     });
   }, [page, limit, search, status, sortBy, order]);
 
+  const exportParams = useMemo(() => {
+    return buildWaResponseParams({
+      search,
+      status,
+      sortBy,
+      order,
+    });
+  }, [search, status, sortBy, order]);
+
   const { data, isLoading, isError, error, refetch, isFetching } =
     useWaResponses(params);
+
+  const exportMutation = useExportWaResponses();
 
   const items = data?.data || [];
   const pagination = data?.pagination || {};
@@ -64,9 +77,33 @@ export default function WaResponsesPageContent() {
     setPage(1);
   };
 
+  const handleExport = async (format) => {
+    try {
+      await exportMutation.mutateAsync({
+        ...exportParams,
+        format,
+      });
+
+      toast.success(
+        format === "xlsx"
+          ? "WA responses exported as Excel successfully."
+          : "WA responses exported as CSV successfully.",
+      );
+    } catch (err) {
+      toast.error(
+        err?.response?.data?.message || "Failed to export WA responses.",
+      );
+    }
+  };
+
   return (
     <section className="space-y-6">
-      <WaResponsesHeader onRefresh={refetch} isRefreshing={isFetching} />
+      <WaResponsesHeader
+        onRefresh={refetch}
+        isRefreshing={isFetching}
+        onExport={handleExport}
+        isExporting={exportMutation.isPending}
+      />
 
       <WaResponsesSummaryCards
         total={total}
